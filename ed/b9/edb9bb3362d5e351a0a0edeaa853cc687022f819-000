@@ -1,0 +1,41 @@
+﻿Titre,Property,Arrays,Fichiers
+,explain to an inanimate object what your code is doing,rubber duck technique,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/saved_compressed_image%203.jpg
+,debug50,USE and learn the user interface,
+,,End of day,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%2098.png
+,,When user enter 3 for heightwe observ a new change,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%2099.png
+,,debug50,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%20102.png
+,,garbage value for the memory,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%20101.png
+,,UI of debug,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%20100.png
+,,Finding the errors,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%20103.png
+,printf is the tool for helping !,Debugging is part of the job,
+,everyone can see the source code.,Python / Javascript,
+,,"debuggingreverse engineering, intellectual property issue.si un programmer est vraiment bon il n'a pas d'intérêt à faire du reverse engineering depuis le machine car il perd le nom des variables etc...",PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%20104.png
+,"1. The preprocessing stage includes tasks like file inclusion, macro expansion, and conditional compilation.
+2. Compiling translates source code into assembly code.
+3. Assembling converts assembly code into machine code (0s and 1s).
+4. Linking combines all the machine code and libraries into a single executable program, if necessary.",,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%20106.png
+,,hello.ccs50.cstdio.cclang compile each of this to 0&1,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%20105.png
+,,"compiling is the process of taking source code, (hello.c) and converting to assembly code.",
+,,Compiler GCC / GNUClang,
+,,Assembly languageAssembling take assembly code to 0&1s.,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%20107.png
+,prototype for get_string function,in cs50.h,
+,"#include <stdio.h>void meow(void);int main(void){    for (int i = 0; i < 3; i++) // print 3 times meow    {        meow();    }}void meow(void){    printf(""meow\n"");}#include <stdio.h>",Reminder of prototype function,
+,"#include <stdio.h>void meow(void);int main(void){    for (int i = 0; i < 3; i++) // print 3 times meow    {        meow();    }}void meow(void){    printf(""meow\n"");}#include <stdio.h>",preprocessor directives,
+,,"link cs50 library.
+you need to include the .h file when you compile your code.",PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%20109.png
+,alternative name,alias,
+,. (dot),dot,
+,,"When you run clang, four different things are processed",PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%20108.png
+,"#include <cs50.h>
+#include <stdio.h>
+int main(void)
+{
+    string name = get_string(""What's your name? "");
+    printf(""Hello, %s\n"", name);
+}",cs50.dev,
+,,"compilation without user friendly 
+make program-name
+./program-name",PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%20110.png
+,clang -o hello hello.cclang hello.c -o hello,Command Line for compiling code,
+,,"clang program.c
+./a.out",PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/saved_compressed_image%204.jpg
