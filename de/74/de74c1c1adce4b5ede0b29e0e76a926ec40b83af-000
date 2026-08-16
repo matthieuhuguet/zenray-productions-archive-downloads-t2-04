@@ -1,0 +1,21 @@
+# Shape Nodes (unaffected on transform)
+
+<aside>
+<img src="https://www.notion.so/icons/book_lightgray.svg" alt="https://www.notion.so/icons/book_lightgray.svg" width="40px" />
+
+Shape Nodes
+
+Lorsqu’on sélectionne les faces ça ne produit pas de décalage car on modifie uniquement la shape et pas le transforme.
+
+![image.png](Shape%20Nodes%20(unaffected%20on%20transform)/image.png)
+
+</aside>
+
+<aside>
+<img src="https://www.notion.so/icons/book_lightgray.svg" alt="https://www.notion.so/icons/book_lightgray.svg" width="40px" />
+
+Modifier le Translate, Rotate, Scale en face components ne modifie que le shape node et pas le transform node
+
+![image.png](Shape%20Nodes%20(unaffected%20on%20transform)/image%201.png)
+
+</aside>
