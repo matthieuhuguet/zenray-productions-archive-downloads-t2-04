@@ -1,0 +1,36 @@
+# Game UI Generator React
+
+Created: January 16, 2026 3:47 PM
+Status: Done
+
+![1770198411159-019c280b-2352-73ed-aace-11cda4c3fadf.png](Game%20UI%20Generator%20React/1770198411159-019c280b-2352-73ed-aace-11cda4c3fadf.png)
+
+![image.png](Game%20UI%20Generator%20React/image.png)
+
+![image.png](Game%20UI%20Generator%20React/image%201.png)
+
+Expliquer au maximum 
+
+React is a little JavaScript library with a big influence over the webdev world.
+
+Ajouter d’autres exemples d’icones notamment ainsi qu’une grille de plusieurs variations.
+
+Montrer les Bibliothèques : React, SVG, Tailwind, Framer Motion, Html to img,
+Résultat = une icone vectoriel scalable et exportable. 
+
+- [ ]  Avancer sur le dernier projet React Game UI Generator.
+- [ ]  Montrer la complexité des sdf dans Unreal Engine
+
+[FF7R_UI_Widgets](Game%20UI%20Generator%20React/FF7R_UI_Widgets%202fbd4ee179c3801282f6ffe4c479a384.md)
+
+L’accroche va être Générer des icones sur Unreal engine est compliqué il faut Montrer la complexité des sdf dans Unreal Engine Video Twitter de Ghislain Girardot.
+
+[https://x.com/i/status/1810448677225312718](https://x.com/i/status/1810448677225312718)
+
+**RECREER DES WIDGETS ANIMATION POUR DES JEUX DIRECTEMENT DANS UNREAL ENGINE.**
+
+[Untitled](Game%20UI%20Generator%20React/Untitled%202fbd4ee179c380ac918fd764ca8c93e2.csv)
+
+1. Prototype en React/Framer Motion (rapide à itérer)
+2. Documente les timings, easings, valeurs
+3. Recrée manuellement dans UMG Widget Animations avec les mêmes paramètres
