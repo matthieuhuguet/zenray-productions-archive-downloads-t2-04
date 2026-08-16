@@ -1,0 +1,14 @@
+# Draft pour post sur Mission Control Push
+
+Texte de vente / utility widget on windows.
+
+Récemment avec l’avenement d’outil comme openclaw, claudecode, laisser des données sur votre ordinateur devient de plus en plus critique en terme de sécurité et de backup, j’en ai personnellement fait les frais récemment lorsque je voulais simplement éditer un fichier supprime cette version à été interprété comme supprime l’arborescence des fichiers, evidemment j’ai essayé de vibe codé pour récupérer mes fichiers mais tous les assets images png / jpeg n’ont pas pu être récupéré
+
+Je n’aimerai pas que ça vous arrive j’ai donc codé un petit outil widget qui permet de fetch, pull, push des données par rapport aux dossiers sélectionnés dont vous avez besoin.
+
+Des slots de folders sont disponibles à ajouter pour créer des repositery directement sur github.
+
+chaque jour une nouvelle branche est créé ce qui permet 
+
+Ce produit outil est disponible en source code sur github si jamais vous en avez besoin vous pouvez le prendre directement et demander à une solution comme github un unboarding avec openclaw, claudecode ou cursor serait d’ailleurs une bonne idée pour configurer l’outil.
+En soit l’outil fonctionne exactement comme un github desktop sauf qu’il permet de gérer plusieurs repo en même temps et de les synchroniser en même temps. j’ai choisi de batch et de mettre une limite à 80 mb. car certaines des images EXR sur lesquels je travaille dépasse 20 mb mais je pense que pour des envois plus rapide il serait pertinent de faire en sorte de réduire cette limite. pour chaque fichier même si je pense
