@@ -1,0 +1,452 @@
+# PORTFOLIO PART V 2024 / Houdini 3D & Code Tech Lessons Learning Deep ♪
+
+### [PORTFOLIO 2024 PART I / Houdini Lessons Learning Deep](https://www.evernote.com/shard/s342/sh/2cf197c7-21c2-4f6a-227d-c5aacb350dfa/l5pFp4HYYfJ2MBsVSU0G7a1HpCv_47Wg3KUCTHhkQe3g5uZc5mdlbjYDxw)
+
+---
+
+### [PORTFOLIO PART II 2024 / Houdini Lessons Learning Deep](https://www.evernote.com/shard/s342/sh/d079bb52-ee19-8bac-e3ec-27b2c56f8366/GbZemIW0mchGw_y4DKHs1iHi4eRbCRXMyHqrowua8xHJfAbxEGWdwROgJA)
+
+---
+
+### [PORTFOLIO PART III 2024 / Houdini Lessons Learning Deep ♪](https://www.evernote.com/shard/s342/sh/f964286b-c41f-d3ca-9a67-3c9072c74730/hYbRi1yBqPXVRjUiq2S5xCHsoFCnroklY-88U8R1Br3-y23rhQI8tjMEDQ)
+
+---
+
+### [PORTFOLIO IV 2024 / Houdini Lessons Learning Deep ♪](https://www.evernote.com/shard/s342/sh/ee13e163-e770-703f-55ad-a5d1fe86f9a3/jdJzYVn6iRZtM2NUgaxgt3TsEgMV8fnEEpEs7qembTIBjzMmidB9DGqKXw)
+
+---
+
+### [PORTFOLIO V 2024 / Houdini 3D Tech Lessons Learning Deep ♪](https://www.evernote.com/shard/s342/sh/cac3ea57-36a7-e7eb-fbc9-f34e51014165/yeJz967rzVXuu5rI58SRWsvfTbmhmn2ZCjBiaRRtmCFdFKgH1uofmLpHKA)
+
+---
+
+### [Python Courses](https://www.evernote.com/shard/s342/sh/bff85bd0-d89b-8d30-b791-5fe0ad451ffc/Zo3bDgZpMLA54nGfHjej76TXPczAeBvukbzZwpEztOBG0i2ILfXpr1H0lA)
+
+---
+
+On va stop la programmation après La Lecture 3 Algorithms et repartir sur Gnomon Workshop. Pour travailler je vais mettre des boucles chill lofi / deep focus. + Casque.
+
+| Notation | Description | Exemple |
+| --- | --- | --- |
+| **O(n^2)** | Le temps d’exécution augmente avec le carré de la taille de l’entrée. | Boucles imbriquées |
+| **O(n log n)** | Augmente avec la taille de l’entrée multipliée par son logarithme. | Tri fusion |
+| **O(n)** | Proportionnel à la taille de l’entrée. | Parcours d’une liste |
+| **O(log n)** | Augmente avec le logarithme de la taille de l’entrée. | Recherche binaire |
+| **O(1)** | Temps d’exécution constant, indépendant de la taille de l’entrée. | Accès direct à un tableau |
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20c7987fcaf2204c69becdc13b3d484e03.csv)
+
+---
+
+On va passer sur le fait de voir toutes les Lecture (conférence) d'abord et si j'ai besoin d'un récapitulatif et de consolider mon savoir je regarde les videos short de doug loyd et le rappel de cours qui dure environ 1H mais il faut aller à l'essentiel.
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%2041ee859c0de94681901e0b46695c126f.csv)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%203874a335d21e45da9af5a8531f1028c5.csv)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20d3aa7e5e92f14dca966c63034b2988c4.csv)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%205697707d5ae244c3b849f61c08aadbda.csv)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20e109210066824557b686fa73795cba26.csv)
+
+| **Data Type** | **Size in bytes** |
+| --- | --- |
+| bool | 1 |
+| int | 4 |
+| long | 8 |
+| float | 4 |
+| double | 8 |
+| char | 1 |
+| string | ? |
+
+Unreal Courses
+
+---
+
+[https://www.youtube.com/watch?v=m6mJ9r7ytks&ab_channel=UnrealEngine](https://www.youtube.com/watch?v=m6mJ9r7ytks&ab_channel=UnrealEngine)
+
+---
+
+Reprise Arrays
+
+---
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%200d4298d593d140d38dec392c376af703.csv)
+
+| Difference between argument and parameters in function | #include <stdio.h>// Function declaration with parametersvoid add(int num1, int num2);int main() {    int a = 5;    int b = 7;       // Function call with arguments    add(a, b);}// Function definition with parametersvoid add(int num1, int num2) {    int sum = num1 + num2;} |
+| --- | --- |
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20af924da7c49f4c7c9d99e5cad99b75c1.csv)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20dc47305116644f059a28cfd87e34d584.csv)
+
+plusieurs : many, several
+
+### Shorts CS50 to watch still
+
+---
+
+- Data Types
+
+---
+
+- Operators
+
+---
+
+- Conditional Statements (9 min)
+
+---
+
+- Loops (9 min)
+
+---
+
+- Command Line (17 min) shortvideo.
+
+---
+
+Easier to watch the both 9 min videos and discard the 17 min to go to Lecture
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20fec78ddf4aca49f2a0cf52ee4b0585b7.csv)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%2027cbdf5134c64b49bdb04c39f64035cf.csv)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20e9110511e582433dbdcc1643375a4928.csv)
+
+Hello, contacts !
+
+name
+
+age
+
+phone number
+
+Hello, me program
+
+```
+#include <stdio.h>
+#include <cs50.h>
+int main(void)
+{
+    string first_name = get_string("What is your first name? ");
+    string last_name = get_string("What is your last name? ");
+    printf("Hello, %s %s\n", first_name, last_name);
+}
+
+```
+
+| **Camel Case** | Start with a lowercase letter, subsequent words start with uppercase letters. | `firstName`, `lastName` | **C++**, **C#**, **Java**, **C** |
+| --- | --- | --- | --- |
+| **Snake Case** | All lowercase letters, words separated by underscores. | `first_name`, `last_name` | **Python**, **Ruby**, **PHP**, **C** |
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20e0c6bd4c01094393b8432c325c45e428.csv)
+
+Section 1 Course about C
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20145b97f63944433c92c71b41f91dfcae.csv)
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/saved_compressed_image.jpg)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%2004c857ae2a0144a8b2dc08205043a4b2.csv)
+
+| **cd** | **Change le répertoire de travail actuel.** |
+| --- | --- |
+| **cp** | **Copie des fichiers et des répertoires.** |
+| **ls** | **Liste tous les fichiers et répertoires dans un dossier.** |
+| **mkdir** | **Crée un nouveau répertoire. Dossier** |
+| **mv** | **Déplace ou renomme des fichiers ou des répertoires.** |
+| **rm** | **Supprime des fichiers ou des répertoires.** |
+| **rmdir** | **Supprime un répertoire vide.** |
+
+| `%i` | Integer - signed decimal, 32 bits |
+| --- | --- |
+| `%li` | Long integer, 64 bits |
+| `%f` | Floating-point number - float, 32 bits |
+| `%lf` | Double - floating-point number, 64 bits |
+| `%c` | Character |
+| `%s` | String |
+| `%p` | Pointer address - memory address |
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20e7b6de04dce942f688d443d020422015.csv)
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image.png)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%207a9cad2261a24c8a8c6d365fbd2fd897.csv)
+
+créer un nouveau fichier $ code file.c
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20c6f7d36cc124455c896145f192cee500.csv)
+
+Conditionnals
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%201.png)
+
+if (x < y)
+
+{
+
+printf("x is less than y\n");
+
+}
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%202.png)
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%203.png)
+
+---
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%208f785095901e45038d21746b6f4aa407.csv)
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%204.png)
+
+J'ai réussi à remettre le thème mac en retéléchargeant les fichiers !!
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%205.png)
+
+cs50.h
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%206.png)
+
+Manual Pages
+
+[CS50 Manual Pages](https://manual.cs50.io/)
+
+closed source = someone wrote it, they won't show you the code, but they will let you use the zeros and ones.
+
+libraries are codes that someone else code. Those are files with extension h.
+
+.h = header file
+
+Par exemple, si vous avez le code suivant :
+
+```
+printf("Hello\nWorld");
+
+```
+
+Il affichera :
+
+```
+Hello
+World
+
+```
+
+\n
+
+```
+#include <stdio.h>
+int main(void)
+{
+    printf("hello, world\n");
+}
+
+```
+
+⚠️ common mistake is to forgot that the program is already created so don't write ~~hello.c~~ but hello
+
+```
+$ make hello
+
+```
+
+semicolon = ;
+
+like a point we use semicolon.
+
+it's create a new file to code named helo
+
+```
+$ code hello.c
+
+```
+
+$ = Terminal window
+
+create code = code hello.c
+
+compile = make hello
+
+run = ./hello
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%207.png)
+
+Free compiler using cloud.
+
+[cs50.dev](https://cs50.dev/)
+
+compiler = translate one language to another one.
+
+machine code = understand by machines.
+
+source code = made by humans
+
+### Computer Science Harvard Learning
+
+---
+
+- [Week 0 - Scratch](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@71a958764ce040ddb6ea30553bdc7ed1)
+- [Week 1 - C](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@6dc3b19a2300489e8f680fa787b11bc2)
+- [Week 2 - Arrays](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@8110174930274b8ca2d38bbc1c152602)
+- [Week 3 - Algorithms](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@70c79506693243c48cdca2729da5de2d)
+- [Week 4 - Memory](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@f0615071b9ca4de6bd16f6c2e0abeedf)
+- [Week 5 - Data Structures](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@880a71009738460cb821243c44126ca4)
+- [Week 6 - Python](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@c5c8d958a3d84d4cbbace3cf8de045aa)
+- [Artificial Intelligence](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@e4cc36bce80b403f9940ec8ed6f24cce)
+- [Week 7 - SQL](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@5fbaeec58abc4860a9a3d268f43f4170)
+- [Week 8 - HTML, CSS, JavaScript](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@581239500a1e48d7b370cde994b58c59)
+- [Week 9 - Flask](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@1b78b94846cf49e88dc7b954715b7d53)
+- [Week 10 - Cybersecurity](https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@ed66b9b9bb9240f19da6902ce9c358c3)
+
+---
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%203af35c3a95cc4df19827c2f023226a58.csv)
+
+---
+
+Je change de couleur dans la prise de note je vais passer en vert. pour les passages important.
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%2019b062cc498f491dbc1b0a7288851f07.csv)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%2053d83d236994431b9c2a29a1a947f9a5.csv)
+
+### CustomUITaskBar
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%208.png)
+
+---
+
+|  | **Name** | **Common Use Cases in Japanese Art and Text** |
+| --- | --- | --- |
+| 「 」 | **Kagi Kakko** (Corner Brackets) | Used for direct speech in novels, manga, and articles. Also used to denote dialogue in video games. |
+| 『 』 | **Niju Kagi Kakko** (Double Corner Brackets) | Often used for titles of works within text (like a book within a book) or for thoughts in manga and novels. |
+
+### Professional render setup turntable
+
+---
+
+[https://80.lv/articles/a-free-maya-template-for-rendering-professional-turntables/](https://80.lv/articles/a-free-maya-template-for-rendering-professional-turntables/)
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/661509f134a4d.jpg)
+
+---
+
+Playlist recap the basics of SubstanceDesigner
+
+---
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%2082361eb0cbb442498c9a6ed25d2bbdac.csv)
+
+Je vais relire mon document cet après midi, en commençant depuis Portfolio V, si c'est trop long je ne fais qu'une ou deux parties.
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20c6ebc6f7c7e347bb92497709c01e6fef.csv)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20c63079d5208e462e998044e736a1d253.csv)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%2011a60a48e0aa4a1e840d0c287027ee3d.csv)
+
+| Term | Meaning in Programming |
+| --- | --- |
+| Absolute | This usually refers to an absolute value, which is the non-negative value of a number. For example, the absolute value of both -10 and 10 is 10. It's like asking "how far is something from zero?" without caring if it's left or right. |
+| Constant | A constant is a fixed value that doesn't change throughout the program. For example, if you set a constant for the number of days in a week, you'd set it to 7 and it wouldn't change, because there are always 7 days in a week. |
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20fe920a2f62eb4271936295e9022aba55.csv)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20eeb45a92fb714056b31a7efea860db77.csv)
+
+[Untitled](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/Untitled%20725a9072f3cc4cb69ce6153635e665dd.csv)
+
+### Problèmes liés à l'utilisation directe des couleurs de photos
+
+| Problème | Explication |
+| --- | --- |
+| Variation de la lumière | La lumière affecte les couleurs d'une manière qui peut ne pas être uniforme ou prévisible, rendant les couleurs incohérentes pour une utilisation en 3D. |
+| Influence de l'environnement | Les couleurs peuvent être altérées par leur environnement immédiat, par exemple, par la réflexion de couleurs d'objets voisins. |
+| Calibration des couleurs | Les appareils photo et les écrans peuvent avoir des calibrations de couleurs différentes, ce qui conduit à des incohérences dans la perception des couleurs. |
+| Perte de détails | Les photos peuvent ne pas capturer tous les détails nécessaires pour une texture de haute qualité en 3D, surtout en termes de profondeur et de texture. |
+
+Copy node / instead of overlay. Because shift in productions happens.
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/compressed_clipboard_image.jpg)
+
+texture.com
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/compressed_clipboard_image%201.jpg)
+
+Take care to maximize the height before the color.
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/compressed_clipboard_image%202.jpg)
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/compressed_clipboard_image%203.jpg)
+
+Heightmap / Normal are important !
+
+/ Displace are super important !
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%209.png)
+
+Key reference
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/compressed_clipboard_image%204.jpg)
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/compressed_clipboard_image%205.jpg)
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/compressed_clipboard_image%206.jpg)
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/compressed_clipboard_image%207.jpg)
+
+Zoom details
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/compressed_clipboard_image%208.jpg)
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/compressed_clipboard_image%209.jpg)
+
+Prendre des références avec une lumière réaliste.
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/compressed_clipboard_image%2010.jpg)
+
+Great example. Local Details / Bending light / tail of light / fingernail test / sense of gravity.
+
+---
+
+![](PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/compressed_clipboard_image%2011.jpg)
+
+---
+
+### Substance Designer Masterclass Workshop
+
+---
