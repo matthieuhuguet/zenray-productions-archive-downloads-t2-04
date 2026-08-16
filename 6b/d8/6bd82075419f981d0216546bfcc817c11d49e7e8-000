@@ -1,0 +1,4 @@
+# Untitled
+
+Recursion of algorithm: assign a struct values to an array in order
+: people[0] = (struct person){"Carter", "+1-123-456"};
