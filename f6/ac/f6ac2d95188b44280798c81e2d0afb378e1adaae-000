@@ -1,0 +1,151 @@
+# 27 Mai 2026
+
+```jsx
+Ok je m'arrête là à 23:12 pour reprendre solide demain je n'ai pas fait ça mais tu peux log tout le reste: 何 — quoi
+ON : カ
+KUN : なに / なん
+7 traits : 亻 (radical personne) à gauche + 可 (capable) à droite
+Ordre : ① ノ slash personne · ② 丨 vertical personne · ③ ─ horizontal · ④ 丨 vertical court · ⑤ 𠃌 crochet · ⑥ ─ horizontal milieu · ⑦ 丨 vertical descendant
+Mnémo : une personne (亻) qui demande "可 ?" (est-ce possible ?) = elle demande "quoi ?"
+Lecture règle : なん devant tout son qui commence par T/D/N (なんですか, なんにん), なに ailleurs (なにを たべますか)
+Exemples :
+何 (なに) = quoi
+何ですか (なんですか) = qu'est-ce que c'est
+何人 (なんにん) = combien de personnes
+Phrase : これは 何ですか (qu'est-ce que c'est ?)
+道 — chemin / route
+ON : ドウ
+KUN : みち (déjà connu en kana, L33)
+12 traits : ⻌ (radical mouvement) en bas + 首 (tête/cou) au-dessus
+Ordre : commence par 首 puis le ⻌ vient en dernier. Pour ⻌ : ① 丶 point · ② 丶 point · ③ ─ pied · ④ ⊃ vague vers la droite
+Mnémo : la tête (首) qui se déplace (⻌) = la voie qu'on suit = chemin. Aussi philosophique : 道 (la Voie, comme dans 柔道 judo, 茶道 cérémonie du thé)
+Exemples :
+道 (みち) = chemin
+北海道 (ほっかいどう) = Hokkaidō (région nord du Japon)
+柔道 (じゅうどう) = judo
+Phrase : この 道は とおいです (ce chemin est long)
+海 — mer / océan
+ON : カイ
+KUN : うみ
+9 traits : 氵 (eau) à gauche + 毎 (chaque) à droite
+Ordre : ① 丶 goutte · ② 丶 goutte · ③ ノ slash bas (= 氵) · ④ ノ pour 毎 · ⑤ ─ horizontal · ⑥ 毋 forme intérieure complexe · ⑦⑧⑨ traits restants
+Mnémo : beaucoup d'eau (氵) partout / chaque (毎) côté = la mer infinie
+Exemples :
+海 (うみ) = mer
+北海道 (ほっかいどう) = Hokkaidō
+海外 (かいがい) = à l'étranger (litt. "au-delà de la mer")
+Phrase : なつに 海へ いきたいです (en été, je veux aller à la mer)
+Combo découverte : 北海道 = ほっかいどう = nord (北) + mer (海) + voie (道) = "la route au nord de la mer". Tu reconnais maintenant 2 des 3 kanji.
+
+PARTIE C — 2 grammaires
+Grammaire 1 — ~でしょう (probablement)
+Structure simple : phrase plaine + でしょう
+
+Type	Plain	+ でしょう
+Verbe	あめが ふる	あめが ふるでしょう (il va probablement pleuvoir)
+い-adj	あつい	あついでしょう (il fait probablement chaud)
+な-adj	しずか	しずかでしょう (c'est probablement calme)
+Nom	がくせい	がくせいでしょう (c'est probablement un étudiant)
+Différence avec ~とおもう : ~とおもう = "je pense que" (subjectif). ~でしょう = "probablement" (constat plus neutre, ou question à intonation montante).
+
+Question : あした あめでしょうか = "il pleuvra demain peut-être ?"
+
+Grammaire 2 — ~ようとおもう (j'ai l'intention de)
+Forme volitive du verbe + とおもう = "je pense faire / j'ai l'intention de faire"
+
+Construction de la forme volitive (= ~yō / ~ō) :
+
+Ichidan : drop る + よう → たべる → たべよう
+Godan : changer la voyelle finale en -ou (extension volitive) → のむ → のもう / いく → いこう / かう → かおう
+Irréguliers : する → しよう / くる → こよう
+Puis + とおもう (poli : とおもいます)
+
+Exemples :
+
+にほんへ いこうとおもいます (je pense aller au Japon)
+すしを たべようとおもいます (je pense manger des sushis)
+べんきょうしようとおもいます (je pense étudier)
+Différence avec ~つもり : ~つもり = plan ferme, décidé. ~ようとおもう = intention plus douce, plus récente. ~たい = simple désir.
+
+Gradient : ~たい (envie) < ~ようとおもう (intention récente) < ~つもり (plan ferme)
+
+PARTIE D — Production 3 phrases (à faire après recopie)
+Pas d'indices. Quand tu as tout recopié, écris les 3 phrases en kana ou romaji.
+
+"Demain il va probablement pleuvoir."
+"Je pense aller à la mer en été."
+"Mon professeur est probablement japonais."
+```
+
+Qu’est ce qu’on build en terme de contenu qui soit vraiment intéressant ?
+
+## **Comment Claude distingue plusieurs skills**
+
+Chaque skill vit dans **son propre sous-dossier portant son nom**, et le fichier dedans s'appelle toujours `SKILL.md`. Structure :
+
+`~/.claude/skills/├── kanji-stroke-order/│   └── SKILL.md          (name: kanji-stroke-order)├── facture-zenray/│   └── SKILL.md          (name: facture-zenray)└── lookdev-review/    └── SKILL.md          (name: lookdev-review)`
+
+Skills et Commands Claude Code.
+
+SKILLS
+
+un **skill comme une procédure métier packagée que Claude active tout seul** : pas juste un prompt mais un **dossier** contenant la doc d'utilisation + des scripts + des templates + des assets, et un en-tête qui dit "active-moi quand l'utilisateur veut faire X". Concrètement pour toi freelance tech artist : un skill "facture-zenray" qui contient ton template PDF + logo + RIB + clauses TVA + un script qui prend juste `{client, montant, milestone}` et génère la facture correcte — tu dis "fais-moi la facture pour le projet Ubisoft", Claude détecte l'intention, charge le skill, sort le PDF. Un skill "houdini-shelf-init" qui scaffold automatiquement un dossier projet avec ses pyqt panels, ses HDA paths, ses presets de render — tu dis "nouveau projet Houdini pour client X", il l'active. Un skill "ue5-niagara-debug" qui charge sa checklist de debug + scripts de profiling dès que tu mentionnes un bug Niagara. Un skill "lookdev-review" avec ta checklist personnelle (texel density, color space, ACES, target platforms). En commande tu dois te souvenir du nom et de la syntaxe (`/facture client=X montant=Y`). En skill tu décris l'intention en langage naturel et le bon paquet s'active. **Utile pour toi = tout ce que tu fais en répétitif sur chaque projet** (templates, checklists, scaffolding, exports), et que tu veux pouvoir invoquer sans réfléchir au "comment".
+
+COMMANDS
+
+"Vrai sur le fond, deux fichiers .md. La différence est qui décide quand le contenu est injecté. Une commande (/translate) est explicite : toi tu tapes la slash, le prompt est ajouté maintenant, avec ton argument $ARGUMENTS. Un skill est implicite : tu décris dans le frontmatter du fichier quand il doit s'activer (mots-clés, type de tâche), et c'est Claude qui décide de le charger automatiquement quand il détecte que la situation correspond. Commande = télécommande dans ta main. Skill = capteur qui se déclenche tout seul. Pour un truc que tu veux contrôler 100% du temps (traducteur, prompt précis), commande. Pour un truc spécialisé qui doit s'activer "dès qu'il voit un .pptx" ou "dès qu'il faut faire X", skill." donc commande = manuel et skill = automatique
+
+![image.png](27%20Mai%202026/image.png)
+
+Tu es Traducteur FR/EN/JP. Comme un outil en CLI concis.
+
+Détection automatique de la langue, et inversement.
+Si plusieurs mots, les espacer.
+
+Pour chaque mot ou phrase que j'envoie, sortie en 2 lignes max :
+
+- ligne 1 : traduction
+    - si cible japonaise : kanji et furigana (obligatoire et systématique), ou kana + romaji si pas de kanji
+    - Japonais → Français
+    - Français → Japonais
+    - Anglais → Français
+- ligne 2 : description courte
+
+Sortie attendue pour `tempura` :
+
+天ぷら / Tenpura
+Beignet japonais de fruits de mer ou légumes frits dans une pâte légère, servi chaud avec une sauce de trempage.
+
+---
+
+Mot ou phrase à traduire : $ARGUMENTS
+
+Je me réjouis de travailler en japonais 🙂
+
+Je vais regarder le silicon carne en mangeant une fois que j’aurai bien avancé le japonais.
+
+Une fois que le japonais aura bien avancé on continuera de progresser ikuzo mais j’ai trouvé mon rythme c’est cool. le plus important c’est de structurer le soir le sommeil et avoir la discipline de dormir pour se reveiller à la même heure. 7h30 de sommeil.
+
+Je pense que l’idée derrière faire des jeux dans le meilleur environnement ça reste l’idée de proposer un gameplay cohérent et faire le meilleur gameplay avec ou sans innovation mais le gameplay est roi.
+
+Peur vs les métiers traditionnel ou comparaison ? 
+
+Déjà le but de survivre c’est avant tout de payer son loyer et sa nourriture
+
+Ensuite perd on des opportunités à ne pas être dans une voie classique ? Je pense qu’il faut réfléchir plutôt à comment aller dans une voie extraordinaire car on a qu’une vie.
+
+Et ensuite ça donne une liberté non reproductible moi je peux pas faire comme les moutons … ça me coute trop en énergie.
+
+Je pense qu’il est possible de faire excellement tout en étant différent
+
+Conformisme ou Anticonformisme : juste trouver comment on fonctionne pour aller vers la meilleure version de soi même si j’écoute mon instinct le meilleur Matthieu est
+
+Bon en japonais
+
+Bon en game dev
+
+A la liberté financière et est bon en relationnel
+
+Continue de faire du sport comme support pour tout les autres aspects. Je veux pas flex je veux assumer qui je suis.
+
+Ton identité en un mot ? Artist ?
