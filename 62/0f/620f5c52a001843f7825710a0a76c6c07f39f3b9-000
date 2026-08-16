@@ -1,0 +1,11 @@
+# Méthode pour remove le bluetooth
+
+Created: October 16, 2025 11:41 AM
+Update: October 16, 2025 11:41 AM
+status: Not started
+
+$ids = pnputil /enum-devices /class Bluetooth |
+Select-String 'Instance ID:' |
+ForEach-Object { ($_ -split ':',2)[1].Trim() }
+
+$ids | ForEach-Object { pnputil /remove-device $_ }
