@@ -1,0 +1,4 @@
+# Levels
+
+Description: Allows remapping of the tones of an input by setting input and output remap factors, similar to the levels feature in Photoshop. Includes a Histogram preview in the parameters, making it a core node for precise adjustments in a graph.
+Fichiers: ../image%2091.png
