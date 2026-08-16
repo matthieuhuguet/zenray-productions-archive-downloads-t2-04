@@ -1,0 +1,9 @@
+﻿Conditionnals,Property,Fichiers
+Recap,,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%2079.png
+simulate an if else.One or other.int x = (true|false_expression) ? 5 : 6;,,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%2080.png
+"switch on intFour, if there is not break;the program will continue for each case so Four, Three, Two, One, Blast-off!",,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%2081.png
+switch statementcase,,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%2082.png
+chain of ifseveral if can be true,,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%2083.png
+else if,,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%2084.png
+if else,,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%2085.png
+if (boolean-expression){will execute or not codedepending on the condition},,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%2086.png
