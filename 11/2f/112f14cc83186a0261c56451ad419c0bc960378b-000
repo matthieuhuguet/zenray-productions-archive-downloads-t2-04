@@ -1,0 +1,63 @@
+# UpAndDownCube.cpp
+
+Created: April 4, 2025 3:22 PM
+
+```jsx
+#include "UpAndDownCube.h"
+#include "Components/StaticMeshComponent.h"
+
+// Sets default values
+AUpAndDownCube::AUpAndDownCube()
+{
+    PrimaryActorTick.bCanEverTick = true;
+
+    // Create cube mesh component
+    CubeMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CubeMesh"));
+    RootComponent = CubeMesh;
+
+    // Initialize parameters
+    RotationSpeed = 100.0f;       // Rotation speed in degrees per second
+    Radius = 300.0f;              // Radius of the spiral
+    SpiralSpeed = 50.0f;          // Spiral speed in degrees per second
+    OscillationAmplitude = 50.0f; // Vertical oscillation amplitude
+    OscillationSpeed = 2.0f;      // Oscillation speed in cycles per second
+    CurrentAngle = 0.0f;          // Initial angle
+}
+
+// Called when the game starts or when spawned
+void AUpAndDownCube::BeginPlay()
+{
+    Super::BeginPlay();
+
+    // Save the initial position of the actor
+    InitialPosition = GetActorLocation();
+
+    // Calculate the initial angle based on the starting position
+    CurrentAngle = FMath::RadiansToDegrees(FMath::Atan2(InitialPosition.Y, InitialPosition.X));
+}
+
+// Called every frame
+void AUpAndDownCube::Tick(float DeltaTime)
+{
+    Super::Tick(DeltaTime);
+
+    // Update angle for spiral movement
+    CurrentAngle += SpiralSpeed * DeltaTime;
+
+    // Compute the new position based on spiral logic
+    float X = FMath::Cos(FMath::DegreesToRadians(CurrentAngle)) * Radius;
+    float Y = FMath::Sin(FMath::DegreesToRadians(CurrentAngle)) * Radius;
+
+    // Compute vertical oscillation
+    float Z = OscillationAmplitude * FMath::Sin(OscillationSpeed * GetWorld()->TimeSeconds);
+
+    // Combine the spiral and oscillation with the initial position offset
+    SetActorLocation(InitialPosition + FVector(X, Y, Z));
+
+    // Apply rotation to the cube
+    FRotator NewRotation = GetActorRotation();
+    NewRotation.Yaw += RotationSpeed * DeltaTime;
+    SetActorRotation(NewRotation);
+}
+
+```
