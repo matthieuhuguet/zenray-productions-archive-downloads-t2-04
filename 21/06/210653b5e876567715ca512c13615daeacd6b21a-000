@@ -1,0 +1,12 @@
+# Create Correct Topology For Stairs
+
+1. Creating the shape
+
+![image.png](Create%20Correct%20Topology%20For%20Stairs/image.png)
+
+1. Extrude
+2. Boolean Inverse
+3. create Edge Loop
+4. adjusting the number of stairs
+
+![image.png](Create%20Correct%20Topology%20For%20Stairs/image%201.png)
