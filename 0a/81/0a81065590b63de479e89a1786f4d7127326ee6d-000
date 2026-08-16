@@ -1,0 +1,47 @@
+# Pipeline de production d’assets 3D
+
+Created: April 4, 2025 3:22 PM
+
+### **1. Priorisation des assets**
+
+- **Sélectionnez les assets clés**
+
+### **2. Modélisation détaillée**
+
+- **Affinage dans Maya**
+- **Utilisation de ZBrush pour les détails organiques**
+
+### **3. Dépliage UV**
+
+- **Création des UVs dans Maya**
+
+### **4. Baking des textures**
+
+- **Préparation des modèles** : Exportez vos modèles high-poly (de ZBrush) et low-poly (de Maya).
+- **Baking dans Substance Painter** : Importez les deux versions dans Substance Painter pour baker les maps nécessaires (normales, occlusion ambiante, courbure, etc.).
+
+### **5. Texturing**
+
+- **Utilisation de Substance Painter** : Profitez des smart materials et des smart masks pour accélérer le processus.
+- **Bibliothèque de matériaux** : Si vous manquez de temps, utilisez des matériaux existants de Substance Painter ou téléchargez des textures PBR gratuites en ligne.
+
+### **6. Exportation des textures**
+
+- **Paramètres d'exportation pour Unreal Engine** : Utilisez le preset d'exportation pour Unreal Engine dans Substance Painter pour assurer une compatibilité optimale.
+
+### **7. Intégration dans Unreal Engine**
+
+- **Importation des modèles et textures**
+- **Création des matériaux dans Unreal**
+
+### **8. Ajustements finaux**
+
+- **Vérification en contexte dans la scène**
+- **Optimisation performance, réduction de certaines textures / Nanite.**
+
+### **Conseils pour optimiser votre temps :**
+
+- **Limitez-vous aux outils que vous maîtrisez** : Étant donné le temps limité, concentrez-vous sur Maya, ZBrush et Substance Painter, où vous avez le plus d'expérience.
+- **Automatisez lorsque possible** : Utilisez des scripts ou des actions prédéfinies pour accélérer des tâches répétitives dans Maya ou Photoshop.
+- **Évitez les perfectionnements excessifs** : Visez un niveau de détail acceptable pour une première version, vous pourrez toujours affiner plus tard.
+- **Gestion du temps** : Allouez des blocs de temps spécifiques à chaque étape et essayez de les respecter (par exemple, 2 heures pour la modélisation détaillée, 1 heure pour les UVs, etc.).
