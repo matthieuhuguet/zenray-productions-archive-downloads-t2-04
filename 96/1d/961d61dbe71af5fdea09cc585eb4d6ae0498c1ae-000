@@ -1,0 +1,15 @@
+﻿Titre,Tableau récapitulatif du C,Property,Fichiers
+,&&,AND operator,
+,||,OR operatorif (c == 'n' || c == 'N'),
+,+=a += ba = a + bcompteur = 1compteur += 2compteur = 3,addition assignment operatorajoute la valeur du côté droit à la variable du côté gauche et enregistre le résultat dans la variable du côté gauche.,
+,\n,retour à la ligne,
+,<stdio.h>,Standard Input/Output Header,
+,!=a != b,différent de,
+,a char is always only one character.,,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/th.jpg
+,%s,"le %s est un espace réservé qui indique à printf d’attendre un argument de type chaîne de caractères. Lorsque vous utilisez %s, vous devez fournir une valeur de chaîne de caractères en argument, après la virgule. Cette valeur remplacera le %s dans le résultat affiché.",
+,%i,pareil mais pour les integer,PORTFOLIO%20PART%20V%202024%20Houdini%203D%20&%20Code%20Tech%20Lesso/image%2087.png
+,%f,pareil mais pour les float%.2f pour afficher deux décimalesDe base c'est 6 décimales après la virgules,
+,==,equal,
+,=,assignment for a variable,
+,ASCII,American Standard Code for Information Interchange,
+,Unicode,character encoding standard that aims to represent every character from every language and symbol system in the world.,
