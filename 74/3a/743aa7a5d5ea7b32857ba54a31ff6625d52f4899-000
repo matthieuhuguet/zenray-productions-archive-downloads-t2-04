@@ -1,0 +1,213 @@
+# 31 Mars 2026
+
+A 17h j’ai fini 
+
+T'as raison, la stratégie est posée depuis le 28 mars, je la change pas. L'objectif n'a jamais bougé : **publier le Bayou → commencer l'outreach.** On est en retard mais le cap reste le même.
+
+Le problème d'aujourd'hui c'est pas la stratégie, c'est l'exécution. On a perdu 3h sur Rizom, 2h sur le triplanar, 1h sur les naming conventions. Chaque blocage technique a aspiré du temps. Demain la règle est simple : **20 minutes max par problème, sinon on contourne.**
+
+**Mercredi — Production day, objectif : Bayou publishable**
+
+**8h-10h : Texturing Substance Painter**
+
+- Church : finir bois blanchi + peinture écaillée + toit + volets
+- Si ça bloque → smart material preset, c'est suffisant
+- Export textures. Church fermée.
+
+**10h-11h : Arbres + végétation**
+
+- SpeedTree export existant ou Megascans trees. Pas de custom texturing sur les arbres demain.
+- Grass, Fern, Palmetto → Megascans drag and drop
+
+**11h-12h : Ground + Water**
+
+- Landscape material triplanar ou Megascans surface. Pas de Substance Designer custom.
+
+**12h-13h : Pause**
+
+**13h-15h : Unreal assemblage**
+
+- Import tout, place la scène, lighting (Lumen + directional + fog + skylight)
+- Si un material bug → material instance Megascans direct, pas de debug
+
+**15h-16h : Screenshots + publish ArtStation + LinkedIn**
+
+**16h-17h : 5 messages LinkedIn à des Art Directors**
+
+Chaque asset c'est : import → material → done. Pas de retour en arrière. Demain soir le Bayou est en ligne et les 5 premiers messages sont envoyés. Go dormir.
+
+# Enregistre ça en mémoire puis push github et enregistre aussi tout ce qui est sur notion depuis le 28 mars en memory
+
+20 minutes max par problème, sinon on contourne.
+
+Ça fait 20 minutes sur ce problème — on contourne.
+
+code pour savoir combien de material sont rattachés au group / geo.
+
+//checknumberofmaterials
+
+i@num_materials = nuniqueval(0, "prim", "shop_materialpath");
+
+- **Houdini (Mesh brut) :** SM_ChurchMain_Geo.fbx *(Geo pour Geometry)*
+- **Rizom (Mesh + UV) :** SM_ChurchMain_UV.fbx
+
+[LouisianaBayou_Assets (1)](31%20Mars%202026/LouisianaBayou_Assets%20(1)%20334d4ee179c380e6983dda1ae487d52b.csv)
+
+Récupérer toutes les automotives materials pour les mettres dans Substance Designer Package puis Painter.
+
+Suite de l’acquisition commerciale “donnez moi votre carte de crédit ! tout passe par ça !
+
+[【記録映像】阿島傘職人｜菅沼商店](https://www.youtube.com/watch?v=wqlmLYo4KPY)
+
+[Rapport_96_Competences_Matthieu_Zenray](31%20Mars%202026/Rapport_96_Competences_Matthieu_Zenray%20334d4ee179c3804ebff7d6415986d9fc.md)
+
+# Méthodes de Texturing — Récapitulatif Zenray
+
+**Date :** 31 Mars 2026
+**Contexte :** Production du hero asset Louisiana Bayou Church (Houdini → RizomUV → Substance Painter → Unreal Engine 5)
+
+---
+
+## 1. Triplanar Mapping (World Aligned, sans UVs)
+
+**Quand l'utiliser :** Surfaces répétitives (planches de bois, murs, sols, pierres, tables, chaises). Tout ce qui peut être texturé avec un tiling material.
+
+**Workflow :**
+
+- Houdini : pas besoin de préparer d'UVs pour ces surfaces
+- Unreal : Master Material `M_WorldTriplanar` avec 3 projections (XY, XZ, YZ), blend basé sur `VertexNormalWS`, Scalar Parameters pour Tiling et Rotation
+- Rotation 90° : node `CustomRotator` avec Rotation Center (0.5, 0.5) et Angle 0.25
+
+**Avantages :** Résolution infinie, zéro travail UV, réutilisable sur tous les assets modulaires.
+**Inconvénients :** 9 texture samples par texture (coûteux en perf), pas de contrôle unique par planche/face. Pas adapté aux objets nécessitant du détail peint à la main.
+
+**Optimisation :** Utiliser un cheap triplanar (1 sample au lieu de 3 via dithered/TAA) ou biplanar pour réduire le coût.
+
+**Ressources :**
+
+- Luos Triplanar Functions (gratuit, Gumroad) : https://luos.gumroad.com/l/Tri-Planar
+- Ryan DowlingSoka Deep Dive : https://ryandowlingsoka.com/unreal/triplanar-dither-biplanar/
+
+---
+
+## 2. UV Classiques + Substance Painter
+
+**Quand l'utiliser :** Hero assets, objets uniques, tout ce qui nécessite un contrôle précis par zone (toit, fenêtres, croix, éléments de décor).
+
+**Workflow :**
+
+- Houdini : modélisation + Material SOP (2 materials minimum : triplanar vs UV)
+- RizomUV : import FBX/OBJ → Auto Seams → Unfold (U) → Pack (P)
+- Astuce : Hide (H) les islands qu'on ne veut pas packer (planches triplanar), Pack uniquement les islands visibles, Unhide (Y), Export
+- Substance Painter : Bake mesh maps (AO, Curvature, Normal, Position, WSN) → Smart Materials + peint à la main → Export textures
+- Unreal : UV channel 0 pour les textures Substance
+
+**Avantages :** Contrôle total, peint par zone, weathering procédural via mesh maps.
+**Inconvénients :** Résolution limitée par la taille de la texture map (4096 max pour un hero asset). Temps de setup UV.
+
+**Tips RizomUV :**
+
+- Texel Density : histogramme en bas de l'UI. Bleu = trop d'espace, Rouge = pas assez, Gris = parfait
+- Stacking : Select Similar (Similar Tools) pour stacker les islands identiques et gagner de l'espace UV
+- Pour 2 materials dans Rizom, exporter en OBJ préserve les primitive groups ; le FBX de Houdini perd souvent les material groups dans Rizom
+
+---
+
+## 3. UDIMs (Multi-Tile UV)
+
+**Quand l'utiliser :** Assets larges nécessitant plus de résolution que ce qu'un seul tile 4096 peut offrir. Film/cinématique.
+
+**Workflow :**
+
+- RizomUV : activer les UDIM tiles, distribuer les islands sur plusieurs tiles (1001, 1002, 1003...)
+- Substance Painter : gère les UDIMs nativement
+- Unreal : support UDIM via Virtual Textures
+
+**Avantages :** Résolution quasi-illimitée, chaque tile peut être 4096.
+**Inconvénients :** Plus lourd en mémoire, plus de textures à gérer. Pas idéal pour du game real-time sans Virtual Textures.
+
+---
+
+## 4. Vertex Color Masking (RGBA)
+
+**Quand l'utiliser :** Blending entre materials sur un même mesh (mousse sur pierre, saleté sur bois, neige sur toit). Aussi pour identifier des zones dans le shader.
+
+**Workflow :**
+
+- Houdini : `@Cd` en vertex (R, G, B, Alpha) pour masquer des zones
+- Unreal : node `VertexColor` dans le Material Graph → chaque channel (R, G, B, A) drive un lerp entre deux materials
+- Peut aussi servir d'ID mask pour sélectionner des zones dans Substance Painter
+
+**Avantages :** Zéro coût texture, résolution infinie (par vertex), très rapide à setup.
+**Inconvénients :** Résolution limitée à la densité de vertices. Pas adapté aux détails fins.
+
+**Combinaison puissante :** Vertex Color R = blend triplanar bois vs triplanar pierre. Vertex Color G = intensité weathering. Vertex Color B = variation de teinte.
+
+---
+
+## 5. Layer Masks (Material Layers dans Unreal)
+
+**Quand l'utiliser :** Systèmes de materials complexes avec ajout/soustraction de couches à la Substance Painter, directement dans Unreal.
+
+**Workflow :**
+
+- Unreal : Material Layer Blend → empiler des Material Layers avec des masques (height-based, AO-based, curvature-based, peint à la main)
+- Similaire au layer system de Substance mais en runtime
+
+**Avantages :** Édition non-destructive, réutilisable, instanciable.
+**Inconvénients :** Plus complexe à setup, coûteux en instructions shader si trop de layers.
+
+---
+
+A terme apprendre le Trimsheet texturing.
+
+## Tableau Décisionnel Rapide
+
+| Situation | Méthode recommandée |
+| --- | --- |
+| Planches, murs, sols modulaires | Triplanar |
+| Hero asset unique (église, véhicule) | UV + Substance Painter |
+| Asset très large, cinématique | UV + UDIMs |
+| Blend mousse/saleté/neige | Vertex Color |
+| Material system complexe, modulaire | Layer Masks |
+| Prototypage rapide | Triplanar |
+| Portfolio / ArtStation post | UV + Substance (meilleur contrôle visuel) |
+
+---
+
+## Workflow Hybride Optimal (ce qu'on a fait sur la Church)
+
+```
+Houdini
+├── Modélisation procédurale (planches, toit, fenêtres, fondations)
+├── Material SOP : 2 slots (planches = triplanar, structure = UV)
+├── Vertex Colors (optionnel, pour blend/variation)
+└── Export FBX/OBJ
+
+RizomUV
+├── Import → Auto Seams → Unfold (U)
+├── Hide planches (H) → Pack structure (P) → Unhide (Y)
+└── Export avec UVs
+
+Substance Painter
+├── Bake mesh maps sur la structure uniquement
+├── Texturing toit, fenêtres, croix, fondations
+└── Export BaseColor, Normal, ORM
+
+Unreal Engine 5
+├── Import mesh unique
+├── Material Slot 1 (planches) → MI_WorldTriplanar (tiling wood)
+├── Material Slot 2 (structure) → MI_Church_Structure (textures Substance)
+└── Vertex Color pour variation/blend optionnel
+```
+
+---
+
+## Leçons Apprises
+
+1. **Rizom ne lit pas bien les material groups depuis un FBX Houdini.** Solution : exporter en OBJ ou utiliser le workflow Hide/Pack dans Rizom.
+2. **Ne pas chercher à tout UV mapper.** Les surfaces triplanar n'ont pas besoin d'UVs propres — même si elles en ont, le triplanar les ignore.
+3. **Le stacking dans Rizom** (Similar Tools) fonctionne sur des islands topologiquement identiques. Pour des planches de tailles différentes, le marquee select + hide est plus rapide.
+4. **CustomRotator** dans Unreal : Rotation Center 0.5/0.5, Angle 0.25 = 90°.
+5. **Bug UE5 :** les wires du Material Editor disparaissent après certains Undo. Fix : fermer et rouvrir le Material Editor.
+6. **Publier à 80% vaut mieux que perfectionner à 100%.** Le triplanar est une optimisation, pas un prérequis pour poster sur ArtStation.
