@@ -1,0 +1,16 @@
+# Parameters for conversion NURBS surface to polygons
+
+<aside>
+<img src="https://www.notion.so/icons/book_lightgray.svg" alt="https://www.notion.so/icons/book_lightgray.svg" width="40px" />
+
+**Best Parameters for conversion NURBS surface to polygons**
+
+**Tesselation Method : General** 
+
+**Quads**
+
+**U and V type : Per Span # of iso params**
+
+![image.png](Parameters%20for%20conversion%20NURBS%20surface%20to%20polygon/image.png)
+
+</aside>
