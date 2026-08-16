@@ -1,0 +1,4 @@
+# Ambient Occlusion (HBAO)(RTAO)
+
+Description: Uses a height map to generate an ambient occlusion map with the Horizon-Based Ambient Occlusion (HBAO) algorithm, offering high-quality AO maps from procedural height maps. An alternative Ray Tracing Ambient Occlusion (RTAO) node is available but is more computationally demanding.
+Fichiers: ../image%20155.png
