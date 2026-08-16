@@ -1,0 +1,18 @@
+# characters
+
+characters
+
+- **personnage joueur :**
+    - **concept :** moine-guerrier agile, bâton magique. style fluide et technique.
+    - **inspiration :** sun wukong (black myth wukong).
+    - **compétences initiales (proto) :** attaque bâton (3 coups), coup chargé, esquive rapide, parade parfaite.
+    - **à faire :** modèle 3d basique (mannequin ue5), rig, animations (idle, course, saut, attaques, esquive).
+- **ennemis de base :**
+    - **concept :** créatures folklore asiatique, corrompues. patterns distincts.
+    - **inspiration :** singes/gardiens de pierre (black myth wukong).
+    - **types (proto) :** guerrier squelette (épée, lent), esprit volant (distance, rapide).
+    - **à faire :** modéliser/animer 2-3 types (1-2 attaques, mort), ia simple (suivre, attaquer).
+- **mini-boss :**
+    - **concept :** créature imposante, complexe. test compétences.
+    - **inspiration :** guerrier loup/tigre démoniaque (black myth wukong).
+    - **à faire :** concept visuel, 3-4 attaques, séquence de combat simple.
