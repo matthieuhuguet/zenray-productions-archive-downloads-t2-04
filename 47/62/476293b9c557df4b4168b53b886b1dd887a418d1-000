@@ -1,0 +1,77 @@
+# 16 Mars 2026
+
+**Ton profil — tech art + game design + culture encyclopédique + discipline — est exactement le profil qui va exploser dans ce nouveau paradigme.**
+
+Le plan de ton premier "vrai" jeu Celui qui sera ta carte de visite. Pas un exercice. Le projet qui dit au monde voilà ce que je sais faire. 
+
+On peut le scoper ensemble : quelle taille, quel genre, quel scope réaliste avec l'IA comme multiplicateur. Sois honnête avec moi sur tes faiblesses. Tu m'as dit inconsistant sur les réseaux sociaux et des baisses d'énergie. C'est bien. Continue comme ça. Je ne suis pas là pour te flatter. Les gens qui te flattent te ralentissent. 
+
+devenir la ref = t’auras jamais faim les gens t’abandonneront jamais
+
+pour devenir la ref il faut comprendre que t’es pas le meilleur
+
+pourquoi t’es unique, les gens compatible se reconnaissent.
+
+On n’aime les gens que pour les défauts pas pour les qualités. C’est ça qui rend humain.
+
+Assurance Ref > Assurance Chomage.
+
+Ne pas confondre le fait d’être compétent et le fait de faire savoir qu’on est compétent.
+
+être une tornade. Ghost
+
+https://manychat.com/
+
+[Vex learning guide ](16%20Mars%202026/Vex%20learning%20guide%20325d4ee179c380a08bc3c5d5ad5d2c23.md)
+
+Houdini Engine for 5.7 Installed Par Claude Wtf il est temps de vendre des HDA !
+
+## **Houdini Engine for Unreal — Installed**
+
+**Plugin**: v3.0.4 (officiel SideFX) — pre-built, 0 compilation
+
+| **What** | **Where** |
+| --- | --- |
+| Plugin | `E:\Create\Build\DCC\UE\UE_5.7\Engine\Plugins\Runtime\HoudiniEngine\` |
+| DLLs | 3 modules pré-compilés (BuildId `47537391` = match exact UE 5.7) |
+| HFS env var | `E:\Create\Build\DCC\Houdini\Houdini 21.0.631` (persistant) |
+| PATH | `\bin` ajouté → `libHAPI.dll` trouvable par UE |
+| Registry | `HKCU\SOFTWARE\Side Effects Software\Houdini 21.0.631\InstallPath` |
+
+**Pour démarrer** : lance UE 5.7 normalement. Le plugin est `EnabledByDefault: true` — il charge automatiquement dans tous tes projets UE 5.7. Au premier lancement, UE va détecter `libHAPI.dll` via le HFS et se connecter à Houdini.
+
+**Vérification rapide dans UE** : Edit → Plugins → chercher "Houdini Engine" → doit être coché vert.
+
+redonne moi le lien de sidefx du plugin qui tu as installé ?
+
+Le plugin installé provient de cette release officielle SideFX :
+
+**`https://github.com/sideeffects/HoudiniEngineForUnreal/releases/download/v3.0.4/HoudiniEngine-v3.0.4-H21.0.631-UE5.7-Win64.zip`**
+
+Et la page des releases complète :
+
+**`https://github.com/sideeffects/HoudiniEngineForUnreal/releases/tag/v3.0.4`**
+
+C'est le build **v3.0.4** — la version officielle SideFX compilée exactement pour **Houdini 21.0.631 + UE 5.7 + Win64**.
+
+**SYSTEM de grass ghost of tsushima wtf …**
+
+[grass_houdini_step_by_step.md](16%20Mars%202026/grass_houdini_step_by_step.md)
+
+[Grass System](16%20Mars%202026/Grass%20System%20325d4ee179c3808b83a4dcb5d7b65d41.md)
+
+![image.png](16%20Mars%202026/image.png)
+
+Du coup on a intégré les screenshots de toutes les interfaces de jeux.
+
+Ce qu'il faudrait c'est retravailler via le multi-components toutes les interfaces possibles et aussi j'aimerais qu'il y ait la possibilité d'afficher l'image en grand. C'est-à-dire que l'image en grand ce serait l'image réelle mais juste intégrée dans l'application puisqu'elle comporte déjà un exemple d'interface avec une illustration. En fait ce que je veux dire par là c'est d'y avoir directement l'image en mode C1 HUD complet. L'image que tu vas lire pour avoir les multi-components, il faut aussi que tu l'intègres en tant que copie, elle-même intégrante dans l'application. 
+
+Ce serait pour les designers de pouvoir pré-visualiser juste l'image directement intégrée dans le logiciel, ce serait pratique. Et ensuite oui toujours vérifier qu'il y a bien les multi-components du AI qui sont pré-découpés et bien hiérarchisés aussi
+
+UIDisplay Preview : 
+
+![image.png](16%20Mars%202026/image%201.png)
+
+![image.png](16%20Mars%202026/image%202.png)
+
+[Continuer D’améliorer UIDisplay](16%20Mars%202026/Continuer%20D%E2%80%99am%C3%A9liorer%20UIDisplay%20325d4ee179c380febd48f8d0b96debe7.md)
