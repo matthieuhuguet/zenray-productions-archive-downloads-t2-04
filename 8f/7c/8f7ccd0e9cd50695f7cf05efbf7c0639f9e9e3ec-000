@@ -1,0 +1,7 @@
+# Différence Entre Displacement & Normal
+
+| **Displacement Map** | Utilisation d'une carte de displacement (en niveaux de gris) pour modifier la géométrie d'une surface. | - Chaque pixel de la carte détermine l'élévation des points de la surface.- Peut créer des détails géométriques complexes. |
+| --- | --- | --- |
+
+| **Normal Map** | Utilisation d'une carte normale pour simuler les détails de surface sans modifier la géométrie. | - Les couleurs RGB de la carte représentent les directions de la lumière.- Permet des effets de relief à bas coût sur les performances. |
+| --- | --- | --- |
