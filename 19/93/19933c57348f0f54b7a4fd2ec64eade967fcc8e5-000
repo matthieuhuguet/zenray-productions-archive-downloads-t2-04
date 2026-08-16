@@ -1,0 +1,17 @@
+# Article Variation
+
+Petit préambule : Dans mon ancien workflow, j'utilisais 4 matériaux de tuiles différents et 4 static meshes différents que je venais copier sur mon mesh, et dont les planches étaient en multi-UDIM, ce qui me prenait un matériau supplémentaire et 4 tuiles UDIM, soit une texture d'environ 64 Mo. Ce poids est désormais réduit à 16 Mo, soit une réduction de 75%, pour un meilleur texel density et padding. Le UV Project ne fonctionne pas pour plus de 1 000 planches il n'offre pas un texel density satisfaisant non plus, il fallait donc une méthode où l'espace des planches serait partagé, afin d'optimiser l'espace. Disclaimer : cette méthode n'est pas l'alpha et l'omega elle permet néanmoins sur houdini d'avoir une répétition d'un mesh avec une texture variée.
+
+Durant le développement j'ai installé RizomUV, mais je me suis rendu compte que pour une surface tileable répétable, RizomUV n'était pas la solution et était plus dédié aux surfaces uniques, sachant qu'il crée un proxy, ce qui n'est pas idéal en travaillant dans Houdini.
+
+J'ai ensuite essayé de me concentrer autour des nodes UV Unwrap et UV Layout placés avant le Copy to Points, car je me suis dit que si les UVs étaient calculés auparavant, je pourrais ensuite distribuer un espace 0-1 plus pertinent sur chaque copie.
+
+J'ai ensuite commencé à écrire du VEX, notamment du modulo, car je me suis souvenu que pour cibler des éléments dans une boucle For Each Primitive, par exemple, cela permettait d'avoir un ciblage sur quelques éléments précis. J'ai donc créé un string attribute :
+
+s@name = (@ptnum % 2 == 0) ? "A1" : "A2";
+
+Je me suis ensuite demandé s'il n'existait pas une node plus built-in que mes expressions VEX, en me disant qu'à terme je ne me souviendrai peut-être pas exactement de ce que j'avais écrit. C'est à ce moment-là que j'ai découvert la node Name, qui permet dans le Geometry Spreadsheet d'écrire directement sur un élément prim ou point, un peu avec une logique de groupe.
+
+J'ai enfin utilisé un Group Range pour sélectionner 1 point sur 2 avec un offset. Il serait possible de prendre des points aléatoires sur une ligne si on voulait varier davantage, et l'idéal c'est que ça permettrait, avec les couleurs assignées par template, de voir exactement où chaque élément se trouve dans le viewport.
+
+Ce projet a débuté par le fait de vouloir instancier des tuiles différentes pour du game-ready. Je suis content d'avoir pu comprendre en profondeur comment le faire. Ça ressemble à du trim sheet pipeline, mais dans le cadre d'une texture en espace 0-1.
