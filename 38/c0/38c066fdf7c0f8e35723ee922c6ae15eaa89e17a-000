@@ -1,0 +1,151 @@
+# 6 Mars 2026
+
+Faire travailler au maximum Claude ! Pas Matthieu, Matthieu c’est le stratège art director et claude c’est celui qui exécute.
+
+Penser en Layer et en systèmes … Faire des V1 et itérer.
+
+1. On commence par le fog!
+- Progress FOG
+    
+    
+    | `Base Fog Density` | 0.0055 | **0.045** |
+    | --- | --- | --- |
+    | `Base Height Fog Falloff` | 0.065 | **0.10** (collé à l'eau) |
+    | `Scale Fog Density` | 1.0 | **1.4** |
+    | `Foggy Density Contribution` | 0.1 | **0.15** |
+    | `Volumetric Fog` | Off | **On** (god rays) |
+    
+    ![image.png](6%20Mars%202026/image.png)
+    
+- Progress Sun Position.
+    
+    **3. Angle du soleil trop haut (impact: gros, effort: 5 min) ça je** 
+    Tes ombres sont trop courtes, la lumiere est encore trop haute. Baisse le **Time of Day** de 0.5 a 1.0 dans UDS pour allonger les ombres et obtenir ce rake lateral qui sculpte les troncs et la facade de l'eglise. Vise les ombres 3 a 4 fois plus longues que la hauteur des objets.
+    
+- Progress Vegetation Density and Scattering.
+    
+    Normalement on peut mettre les arbres dans le processus y’a pas vraiment de choses en plus à faire.
+    
+    C’est le weight qui joue le plus !
+    
+    - `BP_VegSpline` = Actor avec SplineComponent + PCGComponent (contrôle le PCG)
+    
+    ![image.png](6%20Mars%202026/image%201.png)
+    
+    - `PCG_VegetationSpline` = Graph PCG qui lit la spline et distribue Grass/Fern/Palmetto
+    
+    **4. Densite de vegetation au sol (impact: moyen-gros, effort: 30 min)**
+    La ref n'a aucune zone de sol nu visible. Chez toi il y a des patches de terrain marron a decouverts entre les touffes d'herbe. Rajoute des clusters de fougeres, d'herbes hautes, et de ground cover pour boucher ces trous. Pas besoin de modelisation, c'est du placement d'assets Megascans/Fab existants.
+    
+- Progress Trees
+    
+    Sans doute un pcg de 16 Arbres donc 1/4 sont des pins.
+    
+    **5. Arriere-plan vide (impact: moyen, effort: 15 min)**
+    Derriere tes troncs on voit un ciel/horizon plat. La ref a des arbres qui se fondent dans la brume. Place 5 a 8 arbres supplementaires en arriere-plan (des LODs bas suffisent) pour fermer la scene. Le fog les fondra automatiquement dans l'atmosphere.
+    
+- Progress Water Ground (Downloading) Downloaded. Bon je vais avoir la water. Eux il la découpe de toute manière de type hyper ciselé…
+    
+    Steal depuis un autre projet ! 
+    
+    Pond et Blend Grass.
+    
+    To blend grass with tree mulches, we used a height blend technique which carefully blends between blades of grass and dirt. We created a mask using distance fields which drives the final blend and adds variation for each mulch. Adding leaves on top completes the illusion.
+    
+    ![image.png](6%20Mars%202026/image%202.png)
+    
+    ### **Water Pond and Pools**
+    
+    Using the [Single Layer Water](https://dev.epicgames.com/documentation/en-us/unreal-engine/single-layer-water-shading-model-in-unreal-engine) shading model hides the complexity of calculating absorption, scattering and anisotropy, so we could easily create photorealistic water. Along with absorption and scattering, our material supports wind gusts, refraction, floating leaves, and caustics.
+    
+    ![image.png](6%20Mars%202026/image%203.png)
+    
+- Progress Details and Texturing …
+    
+    J'ai bien analysé ta réflexion et l'image de référence. Tu es exactement dans la bonne phase : celle du "polish" et de la narration environnementale (environmental storytelling). C'est ce qui fait passer une scène de "techniquement correcte" à "organique et vivante".
+    
+    Voici une analyse détaillée de tes propositions, point par point, avec des recommandations sur le choix entre Substance Painter et Unreal Engine pour optimiser ton flux de travail :
+    
+    ### 1. Les Arbres (Les textures/taches rouges sur les troncs)
+    
+    - **Analyse :** Sur l'image, on voit bien ces variations rougeâtres sur les cyprès chauves, typiques de l'écorce qui s'écaille ou de la sève/champignons.
+    - **La meilleure approche :** Plutôt que de faire des décals (qui risquent de mal s'appliquer sur la courbure des troncs ou de coûter cher en performances si tu as beaucoup d'arbres), l'idéal est d'utiliser le **Vertex Painting** directement dans Unreal Engine, ou un **Masque de bruit (Noise Mask)** dans ton Material.
+    - **Comment faire :** Crée un *Material* dans Unreal qui mixe deux textures (l'écorce grise classique et l'écorce rouge). Tu peux peindre les zones rouges directement sur tes arbres dans la scène, ce qui te donnera un contrôle artistique total et évitera la répétition.
+    
+    ### 2. Le Crocodile (La texture un peu bleue)
+    
+    - **Analyse :** Tu as l'œil. Le croco a effectivement une teinte légèrement froide/désaturée qui le fait ressortir de la boue très chaude (brune/orangée).
+    - **La meilleure approche :** Tu as totalement raison, pas besoin de repasser par Substance Painter pour ça.
+    - **Comment faire :** Dans ton *Material* Unreal Engine pour le crocodile, ajoute un nœud pour contrôler la teinte/saturation (HueShift ou Desaturation), ou multiplie simplement ta texture de base (Albedo) par un paramètre de couleur (Vector Parameter) légèrement bleuté/grisâtre. Cela te permettra d'ajuster la couleur en temps réel directement dans ton *Material Instance* pour voir comment il réagit avec l'éclairage de ta scène.
+    
+    ### 3. La Cabane / Église (Moisissures, usure, coulures)
+    
+    - **Analyse :** C'est l'élément central. Le bâtiment doit avoir l'air d'avoir subi l'humidité constante du bayou (pourriture à la base, mousse, peinture écaillée, coulures sous le toit).
+    - **La meilleure approche :** C'est ici qu'une **approche hybride** est la plus puissante.
+    
+    ### Le grand débat : Substance Painter vs Décals Unreal Engine
+    
+    Voici comment diviser le travail pour ce type d'environnement :
+    
+    **A. Ce qu'il FAUT faire dans Substance Painter :**
+    
+    - La base des matériaux : Le bois de l'église, la peinture blanche de base.
+    - L'usure logique liée à la géométrie : La peinture qui s'écaille sur les angles tranchants (Edge wear), la crasse incrustée dans les creux des planches (Ambient Occlusion dirt). Substance excelle pour ça grâce à ses bakes de courbure et d'AO.
+    
+    **B. Ce qu'il FAUT faire dans Unreal Engine (Décals et Material Blending) :**
+    
+    - **Les Décals :** Pour les "tags" de moisissure, les grandes coulures d'eau sous les fenêtres ou le toit, et les taches spécifiques (fientes d'oiseaux, grandes plaques de mousse). L'avantage des décals, c'est que tu peux les déplacer, les redimensionner et changer leur opacité en temps réel dans ta scène pour composer ton image parfaitement (comme un peintre).
+    - **Le "Dirt" au niveau du sol :** La base de l'église est dans l'eau marécageuse. Au lieu de peindre ça dans Substance (ce qui figerait l'emplacement de la boue sur ton modèle 3D), crée un *Material* dans Unreal avec une transition de boue contrôlée par l'axe Z (World Position) ou peinte en Vertex Paint. Ainsi, peu importe où tu places la maison, sa base aura toujours l'air ancrée dans la boue.
+    
+    **En résumé pour ton plan d'action :**
+    
+    1. **Croco :** Ajuste le *Material Instance* dans Unreal (teinte/saturation).
+    2. **Arbres :** Prépare un *Material* à deux couches dans Unreal (Gris/Rouge) et utilise le Vertex Paint.
+    3. **Église :** Fais la base de l'usure dans Substance, puis inonde ta scène de **Décals** dans Unreal (taches vertes de moisissures, coulures noires d'humidité) pour casser les répétitions et lui donner cet aspect poisseux et humide typique des marais. Tu peux trouver d'excellents décals de fuites d'eau (Water leaks/Grime) sur Quixel Megascans pour gagner du temps.
+    
+    Spanish Moss ?
+    
+    House …
+    
+- Progress Post Process
+- Post sur le Blueprint qui permet de faire des splines directement.
+    
+    Post Process Unreal
+    
+    Saturation et contrast 0.8 et 1.1
+    
+    ![image.png](6%20Mars%202026/image%204.png)
+    
+    ![image.png](6%20Mars%202026/image%205.png)
+    
+    Shadows Gain 
+    
+    ![image.png](6%20Mars%202026/image%206.png)
+    
+    Midtones Remove R and G
+    
+    ![image.png](6%20Mars%202026/image%207.png)
+    
+    ![image.png](6%20Mars%202026/image%208.png)
+    
+    ![image.png](6%20Mars%202026/image%209.png)
+    
+    ![image.png](6%20Mars%202026/image%2010.png)
+    
+    ![image.png](6%20Mars%202026/image%2011.png)
+    
+    ![image.png](6%20Mars%202026/image%2012.png)
+    
+    ![image.png](6%20Mars%202026/image%2013.png)
+    
+    ![image.png](6%20Mars%202026/image%2014.png)
+    
+    ![image.png](6%20Mars%202026/image%2015.png)
+    
+    ![image.png](6%20Mars%202026/image%2016.png)
+    
+    ![image.png](6%20Mars%202026/image%2017.png)
+    
+    ![image.png](6%20Mars%202026/image%2018.png)
+    
+    ![image.png](6%20Mars%202026/image%2019.png)
