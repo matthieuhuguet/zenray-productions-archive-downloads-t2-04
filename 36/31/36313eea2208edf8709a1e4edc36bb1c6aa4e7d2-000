@@ -1,0 +1,161 @@
+# 18 Mars 2026
+
+18 Mars 2026
+
+DEADLINE POUR LOUISIANA BAYOU
+
+Modeling Texturing Lighting Done.
+
+https://www.youtube.com/watch?v=Rubo69R5LME
+
+I wanted to make a grass system optimized for real-time.
+
+I start from a question. How do you do this. What can I test. How to iterate, and what can I present.
+
+*Here are the questions I asked myself during development.*
+
+### **Le Pipeline**
+
+**Comment transferer une scene blockout UE5 vers Houdini pour retravailler les assets et le scattering, puis reimporter dans UE5 ? Sachant que j'ai notamment un probleme au niveau de l'optimisation de ma grass qui n'est pas optimisee !**
+
+**→FBX export, conserver les transforms.**
+
+**Comment reproduire un systeme d'herbe temps reel inspire de Ghost of Tsushima dans Houdini — scattering, Bezier, animation vent Perlin — vers Unreal ?**
+
+**→Grille + jitter, clumps Voronoi, Bezier cubique.**
+
+**Comment faire pour que mon VEX soit parametrique et ne pas modifier mon code non stop ?**
+
+**→Channel references, exposer en sliders.**
+
+### **Le Transfert d'Animation**
+
+**Comment exporter l'animation de vent et d'herbe de Houdini vers UE5 via Houdini Engine, et faut-il reduire les 5000 instances necessaires pour faire un beau mouvement ?**
+
+**→Houdini Engine ne recook pas par frame.**
+
+**Frustration : pourquoi l'animation Houdini ne se transfere pas directement dans UE5 ? Le fichier est soit trop lourd en Alembic, soit non compatible. Comment avoir le mouvement dans Unreal ?**
+
+**→Horloges differentes, moteurs differents.**
+
+**Prise de conscience du VAT et des nodes Unreal Engine built-in par SideFX, compatible en Soft-Body pour animer via une texture : Vertex Animation Texture.**
+
+**→La solution pour le transfert 1:1.**
+
+### **Le Texturing**
+
+**Une fois que j'ai mon graph Houdini et le mouvement, je me heurte a un probleme : ma grass n'a pas de texture, elle n'est pas tres jolie.**
+
+**→Passer par Substance Designer.**
+
+**Je passe par Substance pour faire rapidement un blade genere via un Height et plusieurs Noise. Sur Houdini, UVs resolus avec UV Transform. Au depart je n'ai pas agrandi mon blade grass, du coup je passe par un UV Transform sur Houdini pour diminuer le scale de mes UVs qui ont ete generes par un Sweep.**
+
+**→Export VAT, branchement textures dans UE5.**
+
+**Je sais pas si c'est une bonne idee au final sur Substance d'avoir une si petite texture. Parce qu'au final je devrais pas faire en sorte d'etirer ma texture sur Substance Designer et de supprimer mon UV Edit pour mettre a 0.1 de scale ?**
+
+**→Etirer. Maximum d'information, minimum d'overdraw.**
+
+**Est-il preferable d'etirer un brin d'herbe sur tout l'espace UV de 0 a 1 dans Substance pour optimiser le rendu 3D, et quel est le workflow AAA standard pour eviter l'overdraw ?**
+
+**→Texture Atlas, full UV coverage. C'est le standard.**
+
+### **Les Bugs**
+
+**En code dans le VEX je me heurte au probleme de la boucle de mes 180 frames qui ne boucle pas.**
+
+**→Fix : crossfade entre deux couches de noise.**
+
+**L'herbe qui vibre — Precision Jitter. J'ai un gros probleme sur Unreal. C'est que, une fois la texture animation importee, certaines aires de l'animation tremblent au point de contact ou elles vont jouer l'animation. C'est comme si le mesh vibrait tres tres vite.**
+
+**→Fix : High Precision HDR 32-bit float, sans compression.**
+
+**Enfin mes blades ont un probleme de rotation et de position.**
+
+**→Fix : meme cause. HDR 32-bit, pas de compression sur les .exr.**
+
+**L'image est vraiment grande.**
+
+**→Possibilite de baisser les segments et baisser le nombre de frames.**
+
+### **Optimisation Finale**
+
+**Passage a 2500 brins et un segment. Animation passe de 60 fps / 3 secondes (180 frames) a 30 FPS / 150 frames pour 5 secondes. Plus d'animation, moins de poids.**
+
+### **Graph Final**
+
+Créer la slide de présentatio React pour le grass Material System 
+
+Accepter le chaos en tant qu’artist.
+
+Reprends comme un article question answer en reprenant le bon context et en répondant par 3 à 5 mots maximales aux questions que je me suis posé durant le développement chacune de ses phrases si elle forme un retour à la ligne est un questionnement.
+
+Je voulais faire un système de grass optimisé pour du temps réel sans passer passer 
+
+Je pars d’un questionnement
+
+Comment on fait ça
+
+Je le fait j’itère et je présente.
+
+Voici les questions que je me suis posé au cours du développement
+:
+
+Lorsque je travaillais sur ma scène Bayou je me demandais, comment transférer une scène blockout UE5 vers Houdini pour retravailler les assets et le scattering, puis réimporter dans UE5. Sachant que j’ai notamment un problème au niveau de l’optimisation de ma grass qui n’est pas optimisé !
+Comment reproduire un système d'herbe temps réel inspiré de Ghost of Tsushima dans Houdini (scattering, Bézier, animation vent Perlin) vers Unreal ?
+
+Comment faire pour que mon vex soit paramètrique et ne pas modifier mon code non stop.
+
+Comment exporter l'animation de vent et d’herbe de Houdini vers UE5 via Houdini Engine, et faut-il réduire les 5000 instances nécessaire pour faire un beau mouvement.
+
+Frustration : pourquoi l'animation Houdini ne se transfère pas directement dans UE5 ? Le fichier est soit trop lourd alembic. soit non compatibles, comment avoir le mouvement dans Houdini.
+
+Prise de conscience du VAT et des nodes Unreal Engine built in par Side FX compatible en soft body pour animer via une texture : Vertex Animation Texture.
+
+Une fois que j’ai mon graph Houdini et le mouvement je me heurte à un problème ma grass n’a pas de texture elle n’est pas très jolie.
+
+Je passe par Substance pour Faire Rapidement un blade généré via un height et plusieurs noise. sur Houdini UVs résolus avec UV Transform. Au départ je n’ai pas agrandi mon blade grass du coup je passe par un UV Transform sur Houdini pour diminuer le scale de mes uvs qui ont été générés par un sweep. Confirmation du plan : export VAT → branchement textures dans UE5.
+
+En code dans le VEX je me heurte aux problèmes de la boucle de mes 180 frames qui ne boucles pas je le fix grâce à deux nuages.
+
+L'herbe qui vibre (Precision Jitter) J'ai un gros problème sur Enric. C'est que, une fois ma texture, la texture animation importée, certaines aires de l'animation tremblent au point de contact où elles vont jouer l'animation. [...] C'est comme si le mesh vibrait très très vite, du coup ça fonctionne pas trop.
+
+Enfin mes blades ont un problème de rotation et de position je le fix grâce à High Precision HDR 32 float HDR sans compression. l’img est vraiment grande possibilité de baisser les segments et baisser le nombre de frames.
+
+Je sais pas si c'est une bonne idée au final sur Substance d'avoir une si petite texture. Parce qu'au final je devrais pas faire en sorte d'étirer ma texture sur Substance Designer et de supprimer mon UV Edit pour mettre à 0.1 de scale. Comme ça j'aurai une texture qui occupera vraiment tous les bords de 0 à 1 même si elle est étirée. Essayez de me donner un peu le workflow triple A.
+
+Est-il préférable d'étirer un brin d'herbe sur tout l'espace UV de 0 à 1 dans Substance pour optimiser le rendu 3D, et quel est le workflow AAA standard (ex: Texture Atlas) pour éviter l'Overdraw ? Je choisis de passer en étirant ma texture pour qu’il y ait un maximum d’information et le minimum d’overdraw.
+
+Optimisation final passage à 2500 brins. et un segment et animation passe de 60 fps 3 images (180 frames) à 30 FPS / 150 frames pour 5 secondes. plus d’animation.
+
+Graph Final 
+
+Obj Network
+
+grid
+
+mountain
+
+scatter
+
+wrangle : base_attributes : height min / max
+
+wrangle : clumping : clump_scale / clamp_pull
+
+wrangle : blades_segments
+
+wrangle : wind_animation : wind_direction / wind_speed / wind_frequency / wind_variation (ocean waves effect on grass)
+
+sweep
+
+uvtransform (bypass because
+
+material
+
+Out Network
+
+vertex_animation_texture : soft-body_deformation 2048 HDR.exr
+
+![GrassPresentationSystem.png](18%20Mars%202026/GrassPresentationSystem.png)
+
+![3.png](18%20Mars%202026/3.png)
