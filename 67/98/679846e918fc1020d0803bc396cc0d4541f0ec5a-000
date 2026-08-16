@@ -1,0 +1,278 @@
+# 25 Février 2026
+
+Copie l’artistique matthieu il n’y a aucune limite c’est vraiment cool après fait du sport.
+
+![upscale4K (Large).jpg](25%20F%C3%A9vrier%202026/upscale4K_(Large).jpg)
+
+[Bayou_Church_Pipeline.pdf](25%20F%C3%A9vrier%202026/Bayou_Church_Pipeline.pdf)
+
+[Bayou_Church_Pipeline.docx](25%20F%C3%A9vrier%202026/Bayou_Church_Pipeline.docx)
+
+tout es sur miro pour commencer il faut mettre de la musique
+
+Matthieu tu dois moins stresser en : bossant par toi même pour trouver les solutions et avancer : faire ce qui te plait
+
+être motivé par un projet pas par des optimisations minables qui n’ont aucune valeur ait l’idée d’une réalisation.
+
+arrêter de réfléchir passer à la conception, réalisation.
+
+Découpé par scène / séquence. pour racconter quelque chose.
+
+Organiser tes notes avec le stack technologique c’est incroyable.
+
+![image.png](25%20F%C3%A9vrier%202026/image.png)
+
+![image.png](25%20F%C3%A9vrier%202026/image%201.png)
+
+![image.png](25%20F%C3%A9vrier%202026/image%202.png)
+
+![image.png](25%20F%C3%A9vrier%202026/image%203.png)
+
+![image.png](25%20F%C3%A9vrier%202026/image%204.png)
+
+![image.png](25%20F%C3%A9vrier%202026/image%205.png)
+
+![Capture d'écran 2026-02-25 203704.png](25%20F%C3%A9vrier%202026/Capture_dcran_2026-02-25_203704.png)
+
+![Capture d'écran 2026-02-25 204526 (Large).png](25%20F%C3%A9vrier%202026/Capture_dcran_2026-02-25_204526_(Large).png)
+
+![image.png](25%20F%C3%A9vrier%202026/image%206.png)
+
+C'est une **excellente** idée, et surtout, c'est l'idée parfaite pour appliquer la conclusion de ta propre réflexion.
+
+Voici pourquoi la "Church dans le Bayou" valide à 100% ton cahier des charges et comment on va lancer ça pour que tu ne tombes pas dans tes anciens pièges.
+
+### 1. Pourquoi c'est le projet idéal (basé sur ton contexte) :
+
+- **L'ADN Émotionnel et Culturel :** Tu as écrit vouloir explorer "l'Amérique mythique et brutale — survie, rédemption, anti-héros tourmentés, nature hostile". Une église abandonnée (ou secrète) dans la moiteur poisseuse d'un bayou, c'est l'incarnation visuelle de la rédemption dans une nature hostile. Ça respire *Red Dead Redemption 2* (Lemoyne) ou *True Detective*. L'ambiance fera le travail narratif.
+- **Le Périmètre Parfait ("Prendre UNE scène") :** C'est un environnement circonscrit. Tu n'as pas besoin de coder un monde ouvert. Tu vas créer **une image, un plan cinématographique, une boucle vidéo (show/expérience)**. C'est exactement le conseil que tu t'es donné : *"Mon blocage n'est pas technique, il est dans le fait de choisir un périmètre assez petit pour le finir"*.
+- **L'alignement avec tes "Skills Uniques" :** Tu es fort en Vision Artistique, Composition, Modélisation, Texturing et Environment Art. Le bayou est un terrain de jeu incroyable pour ça : la lumière perçant à travers la mousse espagnole (Spanish moss), les reflets de l'eau trouble, l'architecture boisée usée par l'humidité. La technique (Houdini/Unreal) sera au service de l'émotion.
+- **Pas besoin de code ni de personnages complexes :** Puisque l'animation et le code sont tes faiblesses, l'environnement (la nature, le brouillard, la lumière) sera le personnage principal.
+
+---
+
+### 2. Le Plan d'Action "Auteur Freelance" (Let's Go)
+
+Pour ne pas que ce projet devienne une énième expérimentation technique inachevée, on va appliquer ton "playbook".
+
+**Phase 1 : La contrainte créative (Aujourd'hui)**
+
+- **Choisis l'émotion exacte :** Veux-tu transmettre la peur (nuit, brouillard, lueur vacillante à l'intérieur), la mélancolie (aube brumeuse, église en ruine), ou le mystère (coucher de soleil orangé, vaudou) ?
+- **Trouve TA référence :** Prends *une* scène (une image de RDR2, d'un film, ou un concept art) qui te "retourne". Elle sera ton étoile du nord.
+
+**Phase 2 : Le blocage du périmètre (Le piège à éviter)**
+
+- **Pas de systèmes infinis :** Tu as écrit que chercher des automatisations était une façon d'éviter le "moment vulnérable". N'utilise Houdini *que* pour générer des assets spécifiques dont tu as besoin (ex: générer la mousse sur les arbres ou les planches cassées), pas pour créer un générateur de bayou procédural infini.
+- **Une seule caméra :** Place ta caméra dans Unreal le plus tôt possible. Ne construis et ne détaille *que* ce qui est dans le champ de la caméra.
+
+**Phase 3 : Le "Devlog Brut" (Ton marketing d'Auteur)**
+
+- Tu as écrit : *"Créer en public. Pas un post LinkedIn corporate. Un devlog brut."*
+- **Action immédiate :** Dès que tu as ton moodboard ou ton premier blockout (formes grises) dans Unreal, publie-le.
+- *Exemple de post :* "Je commence un nouveau projet restreint. L'objectif : recréer l'émotion moite et mélancolique d'une église dans un bayou américain sur Unreal Engine 5. Pas de jeu complet, juste une scène AAA poussée à fond. Voici l'intention et le blockout du Jour 1."
+
+### On tranche et on y va ?
+
+Tu as posé le diagnostic parfait sur ton profil. Tu n'es ni juste un tech, ni un entrepreneur vendeur de vent. **Tu es un Auteur qui doit publier sa vision du monde.**
+
+L'église dans le bayou a de la valeur. Ouvre Unreal. Place l'eau, place un cube d'église, mets une lumière directionnelle de coucher de soleil et un brouillard volumétrique.
+
+Quelle est l'émotion principale que tu veux que le spectateur ressente en voyant cette église ? (Peur, chaleur, abandon, spiritualité tordue ?)
+
+![image.png](25%20F%C3%A9vrier%202026/image%207.png)
+
+https://miro.com/app/board/uXjVJjgiL9s=/
+
+**Breakcore pour la musique de jujutsu Kaisen**
+
+J’aimerai passer en mode artist driven first.
+
+***Tu sais déjà ce que tu aimes.** Tu l'écris toi-même plusieurs fois : **l'émotion, l'histoire, l'ambiance, l'environnement art, la musique. Pas le code. Pas le workflow.** Pas la technique pour la technique. Quand tu cites les œuvres qui te retournent — RDR2, The Last of Us, Witcher 3 — c'est jamais "regarde cette prouesse technique", c'est "regarde ce que ça m'a fait ressentir."*
+
+*Le vrai problème que tu décris, c'est pas un problème de direction. C'est un problème de **finition**. Tu le dis clairement : "je n'ai aucune volonté de finir les choses et de les publier proprement." Et tout le reste — la technique qui change, les outils, l'automatisation, le playbook MrBeast — c'est du bruit autour de ça.*
+
+*Tu opposes "Art Director" et "Entrepreneur" comme si c'étaient deux chemins. Mais dans ton cas, le seul truc qui va te donner une carrière freelance viable, c'est de **publier des choses finies qui montrent ta vision.** L'entrepreneuriat pour toi, c'est pas vendre du coaching ou du contenu viral — c'est rendre visible ce que tu sais faire. Les deux chemins sont le même chemin.*
+
+***prendre UNE scène d'une œuvre qui te retourne, la reproduire dans Houdini/Unreal, la finir, la publier. C'est le seul conseil qui coupe à travers tout le reste. Et je remarque que tu l'as écrit toi-même — puis tu as continué à réfléchir au lieu de le faire. Je veux créer des scènes cinématographiques émotionnellement puissantes, inspirées de la narration américaine que j'admire, en utilisant mes compétences en environnement art et Houdini. Mon blocage n'est pas technique, il est dans le fait de choisir un périmètre assez petit pour le finir, et assez ambitieux pour que ça me fasse vibrer.***
+
+Volonté de faire un projet. Le traduire en une scène.
+
+Enfait j’aime l’art j’adore créer encore plus que jouer je trouve ça noble et magnifique par contre je me dis si je lis le monde que ce n’est pas une posture mature il vaut mieux être un financier … un oussama ammar qui vend des formations, un shubam sharma qui relie des nodes sur n8n, mais en fait fuck ces gens mon talent naturel c’est d’aimer les histoires et de vouloir en créer et ce serait dommage de ne pas essayer … après ça prend du temps mais je dois essayer … bref j’ai mal au ventre soit parce que je ne dois pas abandonner la posture de l’entrepreneur, soit la posture de l’artiste … je ne sais pas en tout cas j’essaie d’avoir un but … juste que la manière de le faire : post sur linkedin et sport (proche des freelances à bali, je le fais j’ai un mini résultat) peut être que je dois persévérer dans la forme artistique et faire enfin ce que j’aime arrêter de me priver honnêtement c’est difficile car mes plus gros points faibles sont l’isolement le fait de faire des choses sans en parler et de me retrouver seul. 
+
+Réflexion sur miro directement passage en mode serif.
+
+Cormac McCarthy
+
+[Réflexion autour d’un projet artistique bilan](25%20F%C3%A9vrier%202026/R%C3%A9flexion%20autour%20d%E2%80%99un%20projet%20artistique%20bilan%20312d4ee179c380a98547eab7dcca5fd1.md)
+
+Bon aller suffit les conneries on va créer des trucs huges. J’ai envie d’être un cowboy on va montrer au monde que je suis bon créant des oeuvres : réalisateur.
+
+Il faut avoir de la pédagogie et utiliser tous les outils. go go go.
+
+Feedback Récent : 
+
+Ajouter de la couleur
+
+Ajouter de la pédagogie
+
+Ajouter une meilleure qualité.
+
+Trouver le template ArtStation via 
+
+Javier Perez 
+
+Format Vidéo par IchibanJapan.
+
+Format Vidéo et Cinématographique.
+
+---
+
+```jsx
+openclaw tui
+```
+
+**⚠️ API rate limit reached. Please try again later.**
+
+Depuis ton téléphone (WhatsApp, Telegram, etc.), tu envoies simplement un message :
+
+`/new`
+
+ou
+
+`/reset`
+
+Ça repart sur une session vierge, même numéro, même canal.
+
+---
+
+**Autres commandes utiles à envoyer depuis le téléphone :**
+
+`/status     → voir l'état de la session (contexte utilisé, modèle actif...)
+/stop       → stopper une réponse en cours
+/compact    → résumer l'historique pour libérer de la fenêtre de contexte`
+
+---
+
+**Si `/new` ne fonctionne pas**, c'est peut-être que les reset triggers ne sont pas configurés dans ton `~/.openclaw/openclaw.json`. Ajoute :
+
+json
+
+`{
+  "session": {
+    "scope": "per-sender",
+    "resetTriggers": ["/new", "/reset"]
+  }
+}`
+
+Puis `openclaw gateway restart` pour appliquer.
+
+# 1. Lancer le gateway
+
+openclaw gateway start
+
+# 2. Ouvrir le dashboard (URL tokenisée, dans le navigateur)
+
+openclaw dashboard
+
+1ff5db59c7310df78f8fc128418093f 1127259cb7a75cef4
+
+```jsx
+openclaw dashboard
+```
+
+Gateway de Claude : http://127.0.0.1:18789/
+
+unauthorized: gateway token missing (open the dashboard URL and paste the token in Control UI settings)
+
+This gateway requires auth. Add a token or password, then click Connect.
+
+openclaw dashboard --no-open → tokenized URLopenclaw doctor --generate-gateway-token → set token
+
+[**Docs: Control UI auth**](https://docs.openclaw.ai/web/dashboard)
+
+# Voir le token actuel
+
+openclaw config get gateway.auth.token
+
+# Ou en regénérer un propre
+
+openclaw doctor --generate-gateway-token
+
+# 🗓️ Journée du 25 Février 2026
+
+> *"Je ne crois plus en rien" — c'est le signe que tu dois agir, pas réfléchir. L'action précède la confiance.*
+> 
+
+J’ai regardé le film sinners vraiment incroyable
+
+et le film marty supreme aussi extrêmement bien fait.
+
+J’ai l’impression que la les américains essaie de faire vraiment des films complexes c’est difficile à appréhender mais ca met 1000 zéro aux prod de jeu actuelle …
+
+- [ ]  **PROSPECTION — Objectif strict : 10 messages envoyés (LinkedIn / studios) faudrait que je fasse ça c’est le plys important.**
+
+---
+
+## 🌅 MATIN — Attaque (09h30 → 12h00)
+
+- [ ]  Routine matinale : eau + citron, lumière naturelle, pas d'écran pendant 10 min
+- [ ]  Cibler : leads chauds en priorité (Benoît Ferrière, Erwan Gaudichon)
+- [ ]  Sport — 45 min min (tractions, dips, squats bulgares). Transformer l'énergie du doute en carburant.
+
+---
+
+## 🔨 APRÈS-MIDI — Production visible (13h00 → 19h00)
+
+<aside>
+⚡ Règle absolue : si ce n'est pas publié, tu n'as pas travaillé.
+
+</aside>
+
+- [ ]  **Finir et publier le material Substance Designer sur le site (REPORTÉ DU 24)**
+- [ ]  Toki Pavillion — 1 bloc de 90 min. Matériaux ou façade. Un livrable visuel en sortie.
+- [ ]  Screenshot du résultat → prêt pour post LinkedIn vendredi
+
+---
+
+## 🌙 SOIR — Sanctuaire (19h00 → 22h30)
+
+- [ ]  Japonais — 30 min minimum (Anki / grammaire N3→N2)
+- [ ]  Finir le film (reporté du 24)
+- [ ]  Coucher 22h30 — impératif
+
+---
+
+## ⚙️ CONFIG OPENCLAW (quand disponible)
+
+- [ ]  Configurer screenshot Mac → conversation WhatsApp (nœud Node OpenClaw)
+- [x]  Configurer l'API Gmail pour envoi d'emails
+- [ ]  Configurer le 'Sas Sécurisé' — tunnel de fichiers via Google Drive
+- [ ]  Y’avait le truc des nodes pour avoir un screenshot aussi.
+
+---
+
+## 📊 Métriques S8 (19→25 Fév)
+
+**Messages prospection :** ___ / 50
+
+**Assets publiés cette semaine :** ___ / 1
+
+**Séances de sport :** ___ / 5
+
+**Heures de japonais :** ___ / 3h30
+
+[25 Février 2026](25%20F%C3%A9vrier%202026/25%20F%C3%A9vrier%202026%20311d4ee179c381689043f2b36a8225a5.md)
+
+[Tâche : Configurer le 'Sas Sécurisé OpenClaw' (tunnel de fichiers via Google Drive)](25%20F%C3%A9vrier%202026/T%C3%A2che%20Configurer%20le%20'Sas%20S%C3%A9curis%C3%A9%20OpenClaw'%20(tunne%20311d4ee179c381e28391ca3cd5d3641f.md)
+
+[Tâche : Configurer l'API Gmail pour permettre l'envoi d'emails](25%20F%C3%A9vrier%202026/T%C3%A2che%20Configurer%20l'API%20Gmail%20pour%20permettre%20l'envo%20311d4ee179c3811fb78beb3561fc9a07.md)
+
+[Reminder : configurer screenshot Mac to conversation WhatsApp](25%20F%C3%A9vrier%202026/Reminder%20configurer%20screenshot%20Mac%20to%20conversation%20311d4ee179c38181a254c0ec17b9db70.md)
+
+[Rapport d'incident : Déblocage de l'upload de fichiers vers Notion API](25%20F%C3%A9vrier%202026/Rapport%20d'incident%20D%C3%A9blocage%20de%20l'upload%20de%20fichie%20311d4ee179c3816183ebc9e6b706d5f9.md)
+
+[Architecture de la Mémoire Augmentée (OpenClaw & Agents IA)](25%20F%C3%A9vrier%202026/Architecture%20de%20la%20M%C3%A9moire%20Augment%C3%A9e%20(OpenClaw%20&%20A%20311d4ee179c38115aca3eb9849587671.md)
+
+[](https://drive.google.com/uc?export=view&id=1mydYJOjFU0peJjOQJIZRFO6QCywp4X7G)
+
+[](https://drive.google.com/uc?export=view&id=1ALYIXxQdJV5AEDJF9Wp-oXgSZ9rAywCI)
