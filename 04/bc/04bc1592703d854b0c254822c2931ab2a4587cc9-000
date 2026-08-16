@@ -1,0 +1,20 @@
+# code
+
+Created: September 25, 2024 11:18 AM
+
+Apprendre la vidéo SQL de David J Malan.
+
+[Compilation d’un Projet C++ Capture D’écran Rectangle](code/Compilation%20d%E2%80%99un%20Projet%20C++%20Capture%20D%E2%80%99%C3%A9cran%20Rectan%2017ad4ee179c3802fa9f2f9d67490e9a3.csv)
+
+[Unreal Engine](code/Unreal%20Engine%2016ad4ee179c3805095f7cc1e0e46b4e6.csv)
+
+[CS50 Courses](code/CS50%20Courses%20113d4ee179c380508c1cfd8df394eba8.csv)
+
+```mermaid
+graph TD
+    A[Watch Lecture] -->|recommended| B[Watch Section]
+    A --> D[Submit Problem Set]
+    B -->|recommended| C[Watch Shorts]
+    C --> D
+    B --> D
+```
