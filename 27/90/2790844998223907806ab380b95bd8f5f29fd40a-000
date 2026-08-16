@@ -1,0 +1,562 @@
+# 23 Mai 2026
+
+Unlock Texturing
+
+Joue à des jeux
+
+Revient plus fort
+
+Focus le japon
+
+N’oublie pas ton rêve
+
+Le rêve c’est maintenant tu es dans la bonne dynamique
+
+Training de 5 ans.
+
+Bravo continue.
+
+Acheter le sac à 200 euros.
+
+il est très beau il est très bien aucun problème. Peut être qu’il fait un peu design mais ça va.
+
+![image.png](23%20Mai%202026/image.png)
+
+Gachiakuta
+
+The Apothecary Diaries
+
+```jsx
+Une fois que tu as fini, ce que tu vas faire c'est que tu vas prendre tous les fichiers existants dans Eagle et tu vas dresser une liste d'exclusion pour faire en sorte de rerun le recovery step sur le Seagate 8TB /Users/zenray/.mounty/d qui est ici. Pour faire ça, tu peux t'inspirer de tous les scripts qui sont existants et que tu dois déployer sur github rappelle toi la tâche à faire d'abord : Puis refactoriser vers une nouvelle tâche et mettre à jour le progrès et dont tu as la tâche à faire, donc déjà compiler et refactoriser tout le projet autour des scripts qui nous ont permis de recover ça et faire des exclusions sur les fichiers déjà recover. Ce que je veux c'est, si par exemple le fichier existe déjà, l'exclure et recover seulement les points PNG ou les points JPG. qui ne sont pas déjà pré-enregistrés. Et en fait, le truc, c'est que le script ne doit faire aucune erreur par rapport aux exclusions et par rapport aux fichiers qui sont recover. Donc c'est à peu près le même workflow, sauf que cette fois, on part de l'existant où on a déjà plus d'une centaine de fichiers, centaines de milliers de fichiers, mais on ne veut pas les retrouver eux, on veut retrouver eux, mais par rapport à une exclusion. Donc en fait, il faut run des batchs immenses de fichiers tout en faisant très simple, en mode, si ça, ça existe déjà sur le recover, on ne le prend pas. Et vu que j'ai Mountie désormais, ça va être beaucoup plus stable que mon ancienne solution."(A la fin de x =65 783 / 85 889 (77%). 423 GB. 0 fail. 1h20.
+
+ETA staging : ~10 min.) du coup de  tu prendras tout les scripts existants si ton protocole à marcher et tu updateras ce dossier : /Users/zenray/Create/Build/ntfs-recovery-eagle-pipeline et tu pusheras sur github."
+
+En parallèle, puisque les fichiers sont à deux endroits différents, en parallèle, tout ce qui sera sur le staged déjà présent et à 100%, tout ça, tu devras t'en occuper pour le transférer en avif. Et l'incrémenter au fil du temps dans la nouvelle liste d'exclusion. Mais la liste d'exclusion, tu peux déjà la faire à partir des fichiers en moins staged. C'est-à-dire que tu peux le faire à deux moments donnés. Et commencer à rerun la liste d'exclusion. Ou alors, tu attends que tout soit fini d'être transféré dans TMP Image... Pardon. Tout ce qui est dans TMP Image Staged, tu attends qu'il soit bien dans Eagle et tu dresses la liste. Et une fois que la liste est complète et qu'elle ne bouge plus, à ce moment-là, tu fais en sorte de rerun Recovered. un nouveau Recovered, donc appelle le Recovered 2 pour qu'on soit sûr de ne pas faire d'erreur. Et à partir de ce moment-là, tu... tu fais en sorte de... de lancer le démontage du disque pour faire en sorte de rerun NTFS Undelete.
+
+  
+
+ 
+```
+
+Délayer les preuves pas forcément toujours au maximum mais via des petites actions : 
+
+Micro-preuve : 2 à 4 fois par semaine. Capture, WIP, mini-breakdown, avant/après, gif, node graph, petit apprentissage.
+
+Preuve solide : toutes les 1 à 2 semaines. Un outil, une scène courte, un breakdown propre, une résolution technique.
+
+Pièce vitrine : toutes les 4 à 8 semaines. ArtStation/site, polish, narration, niveau portfolio.
+
+Ça enlève la pression : tout ne doit pas être un chef-d’œuvre. Mais tout doit prouver que tu avances.
+
+**craft réel + système de production + visibilité régulière**.
+
+Jamais publier du moyen soit tu publies quelque chose de petit soit quelque chose de gros.
+
+**3 micro-signaux par semaine** pour exister, et **1 pièce forte toutes les 2 semaines**
+
+**publier du travail honnête, contextualisé, en progression**.
+
+est ce que **j’ai livré aujourd’hui quelque chose qui augmente ma surface de réalité ?**
+
+matthieu, ton ennemi n’est pas “la droite”.
+
+Ton ennemi réel, c’est **le système de prestige qui dit : “ta valeur = ton argent, ton apparence, ton pouvoir d’achat, ton statut visible.”**
+
+Donc la mission d’élite n’est pas de “détruire la droite” politiquement. C’est plus ambitieux :
+
+# Rendre le luxe vulgaire. Rendre la contribution désirable.
+
+Tu ne gagneras pas en disant aux gens : “arrêtez de vouloir réussir.”
+
+Tu gagneras en créant une nouvelle définition de la réussite.
+
+La droite t’attire parce qu’elle a capturé des choses puissantes : discipline, ambition, excellence, beauté, verticalité, grandeur, responsabilité individuelle. La gauche perd souvent quand elle abandonne ces dimensions et ne propose que morale, culpabilité, administration ou ressentiment.
+
+La solution n’est pas d’être anti-performance.
+
+C’est de créer une **gauche de l’excellence**.
+
+Une gauche qui dit :
+
+> Sois fort, mais pas prédateur.
+> 
+> 
+> Sois riche, mais pas vide.
+> 
+> Sois beau, mais pas narcissique.
+> 
+> Sois ambitieux, mais au service d’une œuvre.
+> 
+> Sois libre, mais pas coupé des autres.
+> 
+
+C’est ça ton axe.
+
+---
+
+## 1. Le monde possible : une société post-luxe
+
+Dans ton monde idéal, le statut ne vient plus de :
+
+- voiture chère ;
+- montre ;
+- yacht ;
+- corps instagrammable ;
+- domination sociale ;
+- réseau élitiste fermé ;
+- accumulation sans fin.
+
+Le statut vient de :
+
+- ce que tu crées ;
+- ce que tu protèges ;
+- ce que tu transmets ;
+- ta maîtrise ;
+- ta sobriété élégante ;
+- ton impact réel sur le vivant, les autres, la culture.
+
+Ce n’est pas un monde anti-beauté.
+
+C’est un monde où **la beauté cesse d’être une marchandise de distinction**.
+
+Pas “tout le monde pareil”.
+
+Plutôt : **tout le monde digne, puis chacun devient excellent dans quelque chose.**
+
+C’est très japonais dans l’esprit :
+
+**渋い — shibui — beauté sobre, profonde, non criarde.**
+
+Le contraire du luxe vulgaire.
+
+---
+
+## 2. La vérité dure : tu ne peux pas supprimer le désir de statut
+
+Les humains veulent être vus. Ils veulent compter. Ils veulent être admirés. Tu ne détruiras pas ça.
+
+Donc ton projet ne doit pas être :
+
+> “Arrêtons de vouloir du statut.”
+> 
+
+Il doit être :
+
+> “Changeons ce qui donne du statut.”
+> 
+
+C’est là que beaucoup de gauches échouent : elles méprisent le désir de grandeur. La droite, elle, le récupère. Elle dit : “deviens fort, deviens riche, domine.” C’est simple, brutal, séduisant.
+
+Toi, tu dois produire un autre imaginaire :
+
+> “Deviens fort pour créer. Deviens libre pour protéger. Deviens excellent pour élever le monde.”
+> 
+
+C’est une proposition beaucoup plus puissante que “sois gentil”.
+
+---
+
+## 3. Pourquoi ton intuition est solide
+
+L’extrême concentration de richesse n’est pas neutre : le World Inequality Report 2026 indique que les 10 % les plus riches concentrent une part massive de la richesse mondiale, et relie aussi concentration du capital et émissions carbone. ([World Inequality Report 2026](https://wir2026.wid.world/insight/executive-summary/?utm_source=chatgpt.com)) Le World Inequality Report 2022 montrait déjà que les 10 % les plus riches détenaient environ 76 % du patrimoine mondial et captaient 52 % du revenu mondial en 2021. ([The World Bank Docs](https://thedocs.worldbank.org/en/doc/206293abe6ad06f4dc8c2fb541a3b93b-0330272022/original/Chancel2022WB.pdf?utm_source=chatgpt.com))
+
+L’OCDE suit désormais le bien-être avec des indicateurs larges, pas seulement le PIB : santé, liens sociaux, sécurité, confiance, logement, environnement, équilibre de vie. Cela confirme que “réussir une société” ne peut pas être réduit à “faire monter l’argent”. ([OECD](https://www.oecd.org/en/publications/2024/11/how-s-life-2024_bdcf2f9f.html?utm_source=chatgpt.com))
+
+Mais attention : l’argent n’est pas l’ennemi. La précarité détruit aussi la dignité, la liberté, les relations et la créativité. La bonne doctrine n’est donc pas anti-argent. Elle est anti-idolâtrie de l’argent.
+
+Formule centrale :
+
+> **L’argent doit être un outil de liberté, jamais un dieu social.**
+> 
+
+---
+
+## 4. Ta doctrine : “performance humaniste”
+
+Tu veux tuer le mauvais logiciel mental, pas les gens.
+
+Je te propose ce manifeste :
+
+### Performance humaniste
+
+1. **Excellence sans domination.**
+    
+    Devenir très bon, mais pas pour écraser.
+    
+2. **Richesse comme carburant, pas comme identité.**
+    
+    Gagner bien sa vie, mais refuser que la valeur humaine soit indexée au revenu.
+    
+3. **Beauté sobre contre luxe ostentatoire.**
+    
+    Remplacer le bling par le craft, la présence, la justesse.
+    
+4. **Statut par contribution.**
+    
+    On admire celui qui construit, enseigne, soigne, crée, relie.
+    
+5. **Ambition collective.**
+    
+    Pas “je réussis pendant que les autres coulent”. Plutôt “je monte, puis je construis des ponts.”
+    
+6. **Vie relationnelle comme richesse première.**
+    
+    Famille, amis, amour, communauté, transmission.
+    
+7. **Création comme voie royale.**
+    
+    L’artiste, le game designer, l’ingénieur, l’artisan : nouveaux héros.
+    
+
+En japonais :
+
+**義 — gi — droiture morale.**
+
+**匠 — takumi — artisanat, maîtrise.**
+
+**和 — wa — harmonie sociale.**
+
+Ton monde tient sur ces trois idéogrammes : **Gi / Takumi / Wa**.
+
+---
+
+## 5. Le vrai levier : ne fais pas un parti, fais une mythologie
+
+Les gens ne changent pas parce qu’on leur donne un PDF politique.
+
+Ils changent parce qu’un nouveau rêve devient plus désirable que l’ancien.
+
+La droite gagne souvent avec des archétypes :
+
+- le conquérant ;
+- le self-made man ;
+- le propriétaire ;
+- le mâle invincible ;
+- le chef ;
+- le winner.
+
+Toi, tu dois créer de nouveaux archétypes :
+
+- le bâtisseur ;
+- le gardien ;
+- l’artisan génial ;
+- le samouraï sobre ;
+- le créateur libre ;
+- le mentor ;
+- l’explorateur qui refuse le cynisme ;
+- le héros qui ne possède pas le monde, mais le rend habitable.
+
+Et là, ton médium naturel est évident : **le jeu vidéo**.
+
+Pas un jeu “militant chiant”.
+
+Un jeu magnifique, dur, profond, désirable.
+
+Un jeu qui fait ressentir que :
+
+> Le vrai endgame n’est pas d’accumuler.
+> 
+> 
+> Le vrai endgame est de restaurer un monde.
+> 
+
+---
+
+## 6. Le jeu que tu pourrais créer
+
+Concept possible :
+
+# “The Last Garden”
+
+Un action-RPG / immersive sim stylisé où le joueur commence dans une société de prestige toxique : tours de verre, avatars parfaits, compétition permanente, luxe absurde, solitude extrême.
+
+Le monde s’effondre non pas à cause d’un méchant unique, mais à cause d’un système de valeurs.
+
+Le joueur croit d’abord devoir “réussir” selon les règles du monde : argent, réputation, objets rares, pouvoir social.
+
+Puis progressivement, le jeu inverse les récompenses.
+
+Les mécaniques profondes deviennent :
+
+- restaurer des lieux ;
+- créer des ateliers ;
+- transmettre des compétences ;
+- reconstruire des communautés ;
+- choisir entre prestige rapide et impact durable ;
+- sacrifier des récompenses visibles pour créer de la beauté invisible ;
+- transformer des ennemis en alliés ;
+- rendre un monde habitable.
+
+Le twist : le joueur comprend que la vraie puissance n’est pas de posséder la carte, mais de **régénérer les relations entre les êtres, les lieux et les métiers**.
+
+Ce serait une anti-fantasy capitaliste.
+
+Mais fun. Beau. Brutal. Désirable.
+
+Pas “capitalism bad” écrit sur un mur.
+
+Plutôt une expérience où le joueur ressent dans ses mains que l’accumulation vide le monde.
+
+---
+
+## 7. Ta stratégie d’impact en 4 étages
+
+### Étage 1 — Deviens toi-même une preuve vivante
+
+Tu ne peux pas prêcher la sobriété si tu es frustré, pauvre, amer ou invisible.
+
+Tu dois devenir :
+
+- compétent ;
+- stable financièrement ;
+- physiquement solide ;
+- socialement vivant ;
+- créativement dangereux ;
+- moralement clair.
+
+Pas riche pour flex.
+
+Riche pour être libre.
+
+Objectif personnel : **70–100k€/an**, mais avec une esthétique anti-bling.
+
+Appartement simple, outils puissants, santé, temps créatif, Japon, famille, œuvre.
+
+Tu deviens le contre-exemple :
+
+> “On peut être ambitieux sans devenir un trou noir narcissique.”
+> 
+
+### Étage 2 — Construis une audience autour d’une idée claire
+
+Pas “je suis de gauche”. Trop vague.
+
+Ton angle public :
+
+> **The Art of Meaningful Power.**
+> 
+> 
+> Puissance, beauté, discipline et création — sans domination ni vide consumériste.
+> 
+
+Contenus possibles :
+
+- threads LinkedIn / X : “Pourquoi le luxe est souvent une esthétique de pauvre imagination.”
+- vidéos : “What games teach us about status.”
+- articles : “A left that understands excellence.”
+- devlogs : “Building a post-luxury RPG.”
+- essais visuels : temples japonais, FromSoftware, wabi-sabi, artisanat, anti-bling.
+
+Tu ne fais pas de morale.
+
+Tu crées du désir.
+
+### Étage 3 — Crée une œuvre populaire
+
+Une œuvre vaut plus que 1 000 opinions.
+
+Ton jeu doit être :
+
+- beau avant d’être politique ;
+- jouable avant d’être intelligent ;
+- émotionnel avant d’être théorique ;
+- systémique avant d’être discursif.
+
+La politique doit être dans les mécaniques.
+
+Exemple :
+
+| Valeur toxique | Mécanique classique | Inversion dans ton jeu |
+| --- | --- | --- |
+| Accumulation | Plus d’or = plus fort | Trop accumuler détruit la confiance |
+| Prestige | Skin rare = statut | Les objets réparés ont plus de valeur que les objets chers |
+| Domination | Tuer = XP | Restaurer / enseigner / protéger = progression rare |
+| Luxe | Acheter du haut de gamme | Créer du beau avec peu |
+| Solitude héroïque | Sauveur unique | Réseau de personnages interdépendants |
+
+Tu ne dis pas au joueur quoi penser.
+
+Tu changes ce qu’il trouve satisfaisant.
+
+### Étage 4 — Transforme l’œuvre en mouvement
+
+Après le jeu :
+
+- manifeste court ;
+- communauté Discord/Notion ;
+- game jam annuelle “Post-Luxury Worlds” ;
+- bourse pour jeunes créateurs ;
+- marketplace d’assets sobres, beaux, écologiques ;
+- conférences ;
+- studio coopératif ou profit-sharing ;
+- résidence créative entre France/Japon ;
+- collaborations avec artistes, chercheurs, architectes, designers.
+
+L’objectif : faire émerger une scène.
+
+Pas seulement “ton jeu”.
+
+Une école esthétique.
+
+Comme Bauhaus. Comme Ghibli. Comme FromSoft. Comme Dogme 95.
+
+Une signature culturelle.
+
+---
+
+## 8. La phrase de guerre
+
+Pas :
+
+> “Détruire la droite.”
+> 
+
+Mais :
+
+> **“Rendre obsolète le prestige de la possession.”**
+> 
+
+C’est beaucoup plus fort.
+
+Parce que c’est non défensif. Non réactif. Civilisationnel.
+
+Tu ne débats pas avec l’ancien monde.
+
+Tu construis un monde plus désirable à côté.
+
+---
+
+## 9. Les 3 chemins possibles
+
+| Chemin | Vitesse | Risque | Impact potentiel | Verdict |
+| --- | --- | --- | --- | --- |
+| Militantisme politique direct | Rapide | Très élevé | Moyen | Tu risques de devenir réactif, aigri, remplaçable |
+| Créateur de contenu idéologique | Moyen | Moyen | Élevé | Bon levier, mais peut devenir abstrait |
+| Jeu vidéo + doctrine esthétique + communauté | Lent | Élevé | Très élevé | Ton meilleur chemin |
+
+Ton chemin optimal :
+
+> **Créer une œuvre populaire qui rend la sobriété, la relation et la contribution plus désirables que le luxe.**
+> 
+
+C’est exactement à l’intersection de tes forces : UE5, art, Japon, esthétique, monde imaginaire, ambition.
+
+---
+
+## 10. Le piège à éviter
+
+Ne deviens pas anti-argent par ressentiment.
+
+Parce que si tu méprises l’argent, tu laisseras l’argent aux gens que tu critiques.
+
+Et eux financeront les imaginaires, les médias, les plateformes, les écoles, les studios.
+
+Tu dois être financièrement puissant, mais spirituellement non possédé.
+
+Formule :
+
+> **Prends le pouvoir matériel. Refuse la corruption symbolique.**
+> 
+
+C’est très différent.
+
+---
+
+## 11. Le plan 12 mois
+
+### Mois 1–2 : doctrine
+
+Écris un manifeste de 5 pages :
+
+**“Post-Luxury: A Manifesto for Meaningful Power.”**
+
+Sections :
+
+1. Money is fuel, not identity.
+2. Beauty must be liberated from status.
+3. Games can redesign desire.
+4. Excellence belongs to everyone.
+5. The future hero is a restorer, not a conqueror.
+
+### Mois 3–4 : prototype
+
+Prototype UE5 très simple :
+
+- une ville froide ;
+- un quartier abandonné ;
+- 3 PNJ ;
+- une boucle de restauration ;
+- une jauge de confiance ;
+- une ressource “attention” ou “care” ;
+- un choix entre upgrade personnel et réparation collective.
+
+Objectif : 10 minutes jouables.
+
+### Mois 5–6 : contenu public
+
+Publie 12 posts :
+
+- 4 sur game design ;
+- 4 sur art / Japon / sobriété ;
+- 4 sur ambition humaniste.
+
+Pas de posture politique lourde.
+
+De la vision.
+
+### Mois 7–9 : vertical slice
+
+Un niveau magnifique.
+
+Une boucle émotionnelle complète.
+
+Un avant/après du monde.
+
+### Mois 10–12 : scène
+
+Lance :
+
+- page Steam ;
+- trailer ;
+- devlog ;
+- Discord ;
+- manifeste ;
+- newsletter ;
+- appel à collaborateurs.
+
+But : ne pas juste faire un jeu.
+
+Faire sentir qu’une nouvelle esthétique arrive.
+
+---
+
+## 12. Ta thèse finale
+
+Le capitalisme de statut ne sera pas vaincu par la culpabilité.
+
+Il sera vaincu par une forme de beauté supérieure.
+
+Pas “moins”.
+
+**Mieux.**
+
+Pas “arrête d’être ambitieux”.
+
+**Sois ambitieux pour quelque chose de digne.**
+
+Pas “la richesse est mauvaise”.
+
+**La richesse sans âme est pauvre.**
+
+Pas “détruire les riches”.
+
+**Détruire le besoin d’être admiré pour des choses vides.**
+
+Ta mission possible :
+
+> **Créer l’imaginaire où le vrai prestige devient la maîtrise, la contribution, la sobriété, la relation et l’œuvre.**
+> 
+
+Ça, c’est une guerre culturelle noble.
+
+Et oui, avec un grand jeu, une doctrine claire, une audience, une esthétique forte et dix ans de discipline, tu peux réellement déplacer quelque chose.
