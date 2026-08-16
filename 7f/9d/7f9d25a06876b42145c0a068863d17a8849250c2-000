@@ -1,0 +1,4 @@
+# Histogram Scan
+
+Description: A simple node for remapping the contrast and brightness of grayscale images. Useful for dynamically adjusting masks. Provides an easier alternative to the levels atomic node.
+Fichiers: ../image%20154.png
